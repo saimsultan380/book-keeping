@@ -1,13 +1,5 @@
 import Link from "next/link";
-import {
-  Facebook,
-  Instagram,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-  Twitter,
-} from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { services } from "@/data/services";
 import { Container } from "@/components/ui/Container";
@@ -25,44 +17,6 @@ export function Footer() {
             <p className="mt-4 text-small text-text-on-dark-muted">
               {siteConfig.description}
             </p>
-            <div className="mt-6 flex gap-3">
-              <a
-                href={siteConfig.social.facebook}
-                aria-label="Facebook"
-                className="hover:text-accent"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Icon icon={Facebook} size="sm" />
-              </a>
-              <a
-                href={siteConfig.social.twitter}
-                aria-label="X (Twitter)"
-                className="hover:text-accent"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Icon icon={Twitter} size="sm" />
-              </a>
-              <a
-                href={siteConfig.social.linkedin}
-                aria-label="LinkedIn"
-                className="hover:text-accent"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Icon icon={Linkedin} size="sm" />
-              </a>
-              <a
-                href={siteConfig.social.instagram}
-                aria-label="Instagram"
-                className="hover:text-accent"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Icon icon={Instagram} size="sm" />
-              </a>
-            </div>
           </div>
 
           <div>

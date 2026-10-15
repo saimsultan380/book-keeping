@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { Container } from "@/components/ui/Container";
 import { Icon } from "@/components/ui/Icon";
@@ -12,47 +12,25 @@ export function TopBar() {
           <span>{siteConfig.topBarPromo}</span>
           <Link
             href="/contact-us/"
-            className="font-semibold text-accent hover:text-accent-hover transition-colors"
+            className="font-semibold text-accent transition-colors hover:text-accent-hover"
           >
             {siteConfig.topBarCta} →
           </Link>
         </p>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-5">
           <a
-            href={siteConfig.social.facebook}
-            aria-label="Facebook"
-            className="hover:text-accent transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
+            href={siteConfig.phoneHref}
+            className="inline-flex items-center gap-2 transition-colors hover:text-accent"
           >
-            <Icon icon={Facebook} size="sm" />
+            <Icon icon={Phone} size="sm" className="text-accent" />
+            <span>{siteConfig.phone}</span>
           </a>
           <a
-            href={siteConfig.social.twitter}
-            aria-label="X (Twitter)"
-            className="hover:text-accent transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
+            href={`mailto:${siteConfig.email}`}
+            className="inline-flex items-center gap-2 transition-colors hover:text-accent"
           >
-            <Icon icon={Twitter} size="sm" />
-          </a>
-          <a
-            href={siteConfig.social.linkedin}
-            aria-label="LinkedIn"
-            className="hover:text-accent transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Icon icon={Linkedin} size="sm" />
-          </a>
-          <a
-            href={siteConfig.social.instagram}
-            aria-label="Instagram"
-            className="hover:text-accent transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Icon icon={Instagram} size="sm" />
+            <Icon icon={Mail} size="sm" className="text-accent" />
+            <span>{siteConfig.email}</span>
           </a>
         </div>
       </Container>
