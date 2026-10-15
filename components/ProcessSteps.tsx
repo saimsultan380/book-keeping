@@ -3,13 +3,17 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { FadeIn } from "@/components/motion/FadeIn";
 
-export function ProcessSteps({ variant = "default" }: { variant?: "default" | "surface" }) {
+export function ProcessSteps({
+  variant = "default",
+}: {
+  variant?: "default" | "surface";
+}) {
   return (
     <Section variant={variant}>
       <SectionHeading
         eyebrow="Our Process"
-        title="A Clear Path from Plans to Bid"
-        intro="Three straightforward steps. No confusion about what happens next."
+        title="A Clearer Path to Financial Confidence"
+        intro="We simplify complex financial decisions with practical guidance tailored to your business."
         align="center"
       />
       <div className="relative grid gap-8 md:grid-cols-3">

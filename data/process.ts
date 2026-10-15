@@ -7,20 +7,20 @@ export type ProcessStep = {
 export const processSteps: ProcessStep[] = [
   {
     number: "01",
-    title: "Share Your Plans",
+    title: "Review Your Finances",
     description:
-      "Send drawings, specs, and addenda. Tell us the trades you need measured and your bid deadline.",
+      "We assess your accounting needs, financial position, and business objectives.",
   },
   {
     number: "02",
-    title: "We Prepare the Estimate",
+    title: "Build Your Strategy",
     description:
-      "Our estimators complete the takeoff, apply current costing, and document assumptions and exclusions.",
+      "We develop the right approach across bookkeeping, tax, CFO advisory, or commercial financing.",
   },
   {
     number: "03",
-    title: "Review and Bid with Confidence",
+    title: "Grow With Confidence",
     description:
-      "You receive a clear report you can price, adjust, and submit. Revisions are available when documents change.",
+      "Use accurate reporting and practical financial guidance to make stronger business decisions.",
   },
 ];

@@ -63,7 +63,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           <div>
             <SectionHeading
               eyebrow="Overview"
-              title={`Professional ${service.title.toLowerCase()} for construction bids`}
+              title={`Professional ${service.title.toLowerCase()} for growing businesses`}
               className="mb-6 md:mb-6"
             />
             <p className="text-body text-text-muted">{service.overview}</p>
@@ -112,7 +112,7 @@ export default async function ServiceDetailPage({ params }: Props) {
         <SectionHeading
           eyebrow="FAQ"
           title="Common Questions"
-          intro="Answers that apply across our estimating packages."
+          intro="Answers that apply across our financial service packages."
         />
         <div className="mx-auto max-w-3xl space-y-4">
           {serviceFaqs.map((faq) => (

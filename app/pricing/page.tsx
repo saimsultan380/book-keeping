@@ -14,7 +14,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata: Metadata = createPageMetadata({
   title: "Pricing",
   description:
-    "Simple, transparent pricing for construction estimating packages — from basic takeoffs to advanced multi-trade estimates.",
+    "Simple, transparent pricing for bookkeeping, tax, CFO advisory, and loan consultation packages.",
   path: "/pricing/",
 });
 
@@ -34,8 +34,8 @@ export default function PricingPage() {
       <Section>
         <SectionHeading
           eyebrow="Packages"
-          title="Choose the Right Estimating Package"
-          intro="Ranges are placeholders pending confirmation. Final pricing depends on drawing set size, trades covered, and turnaround."
+          title="Choose the Right Financial Package"
+          intro="Ranges are placeholders pending confirmation. Final pricing depends on transaction volume, entity complexity, and meeting cadence."
           align="center"
         />
         <div className="grid gap-gap md:grid-cols-2 lg:grid-cols-3">

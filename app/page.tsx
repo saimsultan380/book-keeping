@@ -21,14 +21,12 @@ import { siteConfig } from "@/config/site";
 import { breadcrumbJsonLd, createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: `${siteConfig.brand} | Construction Estimating Services`,
+  title: `${siteConfig.brand} | Bookkeeping, Tax & CFO Advisory`,
   description: siteConfig.description,
   path: "/",
 });
 
-const homeBreadcrumbs = breadcrumbJsonLd([
-  { name: "Home", path: "/" },
-]);
+const homeBreadcrumbs = breadcrumbJsonLd([{ name: "Home", path: "/" }]);
 
 export default function HomePage() {
   return (
@@ -45,7 +43,7 @@ export default function HomePage() {
         <SectionHeading
           eyebrow="Our Services"
           title="What Service We Offer"
-          intro="Quantity takeoffs, residential and commercial estimating, bid preparation, and detailed cost analysis."
+          intro="From accurate bookkeeping to strategic financial advisory, Doxo Collective designs solutions around your business needs."
           action={{ label: "All Services", href: "/services/" }}
         />
         <div className="grid gap-gap sm:grid-cols-2 lg:grid-cols-3">
@@ -60,8 +58,8 @@ export default function HomePage() {
       <Section variant="surface">
         <SectionHeading
           eyebrow="Transparent Pricing"
-          title="Scalable Estimating Packages"
-          intro="Choose a package that matches your project size. Final fees depend on drawing volume and deadline."
+          title="Scalable Financial Solutions"
+          intro="Expert accounting and advisory packages tailored to your business needs."
           align="center"
         />
         <PricingTabs />
@@ -71,9 +69,9 @@ export default function HomePage() {
 
       <Section>
         <SectionHeading
-          eyebrow="Our Projects"
-          title="Recent Estimating Work"
-          intro="Sample project types we support. Replace with your portfolio before launch."
+          eyebrow="Our Cases"
+          title="Let’s See Our Latest Project"
+          intro="Sample engagements across bookkeeping, planning, and financial operations."
         />
         <div className="grid gap-gap sm:grid-cols-2">
           {projects.map((project, i) => (
@@ -88,8 +86,8 @@ export default function HomePage() {
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <SectionHeading
             eyebrow="Why Choose Us"
-            title="Trusted Estimating Support for Contractors"
-            intro="We measure carefully, document clearly, and return numbers your team can bid with — feedback from contractors on live bids."
+            title="Trusted Financial Guidance for Your Business"
+            intro="Our advisors act as an extension of your leadership team—accurate reporting, strategic guidance, and dedicated support focused on your financial security."
             className="mb-0 md:mb-0"
           />
           <TestimonialCarousel />
@@ -101,9 +99,9 @@ export default function HomePage() {
 
       <Section>
         <SectionHeading
-          eyebrow="Blog"
-          title="Latest Articles"
-          intro="Practical notes on quantity takeoffs, cost analysis, and bid preparation."
+          eyebrow="Our Blog"
+          title="Latest Blog & Articles"
+          intro="Practical notes on bookkeeping, tax readiness, cash flow, and financial planning."
           action={{ label: "View All", href: "/blog/" }}
         />
         <div className="grid gap-gap md:grid-cols-3">

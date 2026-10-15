@@ -9,7 +9,7 @@ export type Crumb = { label: string; href?: string };
 
 type BreadcrumbsProps = {
   items: Crumb[];
-  /** Canonical path of the current page, e.g. "/about-us/" or "/services/quantity-takeoff/" */
+  /** Canonical path of the current page, e.g. "/about-us/" or "/services/bookkeeping-services/" */
   currentPath: string;
 };
 

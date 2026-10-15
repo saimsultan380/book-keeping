@@ -6,7 +6,7 @@ import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Terms & Conditions",
-  description: `Terms and conditions for using ${siteConfig.brand} website and construction estimating services.`,
+  description: `Terms and conditions for using ${siteConfig.brand} website and financial services.`,
   path: "/terms-conditions/",
 });
 
@@ -29,17 +29,20 @@ export default function TermsPage() {
           </p>
           <p>
             By using this website and engaging {siteConfig.legalName} for
-            estimating services, you agree to these terms.
+            bookkeeping or financial advisory services, you agree to these
+            terms.
           </p>
           <h2 className="text-h3 text-text">Services</h2>
           <p>
-            Estimates and takeoffs are prepared from the documents you provide.
-            Accuracy depends on the completeness of those documents. We are not
-            responsible for bid outcomes or construction means and methods.
+            Bookkeeping, tax support, and advisory work are prepared from the
+            information and access you provide. Accuracy depends on complete and
+            timely records. We are not a substitute for licensed legal advice,
+            and tax filing authority remains with your designated tax
+            professional unless stated otherwise in a signed engagement.
           </p>
           <h2 className="text-h3 text-text">Intellectual property</h2>
           <p>
-            Deliverables are licensed for your project use. Redistribution or
+            Deliverables are licensed for your business use. Redistribution or
             resale of our workbooks without written permission is not allowed.
           </p>
           <h2 className="text-h3 text-text">Contact</h2>

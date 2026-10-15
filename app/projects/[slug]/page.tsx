@@ -58,13 +58,13 @@ export default async function ProjectPage({ params }: Props) {
             <h2 className="mt-3 text-h2 text-text">{project.title}</h2>
             <p className="mt-4 text-body text-text-muted">{project.excerpt}</p>
             <p className="mt-4 text-body text-text-muted">
-              This is a placeholder project page. Replace with a full case study
-              covering scope, trades measured, and outcomes once real project
-              permissions are available.
+              This is a sample case study page. Replace with a full write-up
+              covering scope, deliverables, and outcomes once client permissions
+              are available.
             </p>
             <div className="mt-8">
               <Button href="/contact-us/" variant="accent">
-                Discuss a Similar Project
+                Discuss a Similar Engagement
               </Button>
             </div>
           </div>

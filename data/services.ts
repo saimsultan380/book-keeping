@@ -11,136 +11,136 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    slug: "quantity-takeoff",
-    title: "Quantity Takeoff",
+    slug: "bookkeeping-services",
+    title: "Bookkeeping Services",
     shortDescription:
-      "Detailed material quantities from your plans so bids start from measured scope, not guesswork.",
+      "Professional ledger management and clean financial reporting to keep your business finances organized and accurate.",
     overview:
-      "We measure every trade from your drawings and specs, producing clear quantity sheets you can price with confidence. Our takeoffs support residential, commercial, and light industrial work.",
+      "We maintain your day-to-day books with disciplined categorizing, reconciliations, and monthly reporting. You get clear records ready for tax prep, cash-flow decisions, and lender reviews.",
     includes: [
-      "CSI-aligned quantity sheets",
-      "Plan and addendum review",
-      "Trade-by-trade material counts",
-      "Clarifications for missing scope",
+      "Transaction categorization",
+      "Bank and credit-card reconciliation",
+      "Monthly financial statements",
+      "Accounts payable and receivable support",
     ],
     deliverables: [
-      "Excel or PDF takeoff workbook",
-      "Marked-up plan references",
-      "Scope notes and exclusions",
-    ],
-    image:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Construction plans and measuring tools on a desk",
-  },
-  {
-    slug: "residential-estimating",
-    title: "Residential Estimating",
-    shortDescription:
-      "Cost estimates for homes, renovations, and multi-family builds with local labor and material pricing.",
-    overview:
-      "From single-family remodels to multi-unit residential, we prepare estimates that reflect current material prices and labor productivity so you can bid competitively without undercutting margins.",
-    includes: [
-      "Full residential takeoff",
-      "Material and labor costing",
-      "Allowance recommendations",
-      "Owner-ready summary report",
-    ],
-    deliverables: [
-      "Itemized residential estimate",
-      "Unit-cost backup",
-      "Optional bid form package",
-    ],
-    image:
-      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Modern residential home exterior",
-  },
-  {
-    slug: "commercial-estimating",
-    title: "Commercial Estimating",
-    shortDescription:
-      "Structured estimates for offices, retail, hospitality, and institutional projects.",
-    overview:
-      "Commercial bids demand disciplined scope control. We break work into trade packages, apply current unit costs, and flag risk areas that often become change orders.",
-    includes: [
-      "Commercial quantity takeoffs",
-      "Trade package breakdowns",
-      "Equipment and labor costing",
-      "Contingency guidance",
-    ],
-    deliverables: [
-      "Comprehensive cost analysis",
-      "Division summaries",
-      "Risk and assumption notes",
-    ],
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Commercial building exterior",
-  },
-  {
-    slug: "bid-preparation",
-    title: "Bid Preparation",
-    shortDescription:
-      "Competitive bid packages with clear inclusions, exclusions, and pricing ready for submission.",
-    overview:
-      "We assemble bid documents that present your numbers cleanly. That includes takeoff support, unit pricing, and bid form preparation so your team can focus on strategy and relationships.",
-    includes: [
-      "Bid form completion support",
-      "Accurate bid calculations",
-      "Material and labor pricing",
-      "Inclusion and exclusion lists",
-    ],
-    deliverables: [
-      "Submission-ready bid package",
-      "Support worksheets",
-      "Clarification log",
-    ],
-    image:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Estimator reviewing bid documents",
-  },
-  {
-    slug: "detailed-cost-analysis",
-    title: "Detailed Cost Analysis",
-    shortDescription:
-      "Line-item cost breakdowns covering materials, labor, overhead, profit, and contingency.",
-    overview:
-      "When you need more than a lump sum, we provide transparent cost analysis across every major cost center so owners, GCs, and lenders can see how the number was built.",
-    includes: [
-      "Line-item cost breakdown",
-      "Overhead and profit modeling",
-      "Contingency recommendations",
-      "Value-engineering options",
-    ],
-    deliverables: [
-      "Detailed cost report",
-      "Summary dashboards",
-      "Optional presentation PDF",
+      "Reconciled books each month",
+      "Profit & loss and balance sheet",
+      "Expense summaries by category",
     ],
     image:
       "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Cost analysis spreadsheet and calculator",
+    imageAlt: "Bookkeeping documents and calculator on a desk",
   },
   {
-    slug: "advanced-estimating",
-    title: "Advanced Estimating",
+    slug: "corporate-tax",
+    title: "Corporate Tax",
     shortDescription:
-      "Complex project support for multi-phase, multi-trade, and high-spec scopes.",
+      "Year-round tax planning and entity optimization designed to help your business manage tax obligations strategically.",
     overview:
-      "Large or unusual projects need deeper review. Our advanced estimating service covers complex assemblies, phased work, and coordination across design packages.",
+      "Corporate tax work should not wait until filing season. We organize records, review documentation gaps, and prepare clean packages so filing is timely and orderly.",
     includes: [
-      "Complex project takeoffs",
-      "Multi-phase cost planning",
-      "Specialty trade coordination",
-      "Ongoing estimate revisions",
+      "Year-round tax readiness",
+      "Entity and filing checklist support",
+      "Estimated tax guidance",
+      "Coordination with your CPA when needed",
     ],
     deliverables: [
-      "Full estimating workbook",
-      "Revision history",
-      "Dedicated estimator contact",
+      "Organized tax document package",
+      "Filing timeline and checklist",
+      "Notes on deductions and documentation",
     ],
     image:
-      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Large construction site with cranes",
+      "https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Tax forms and financial paperwork on a desk",
+  },
+  {
+    slug: "cfo-advisory",
+    title: "CFO Advisory",
+    shortDescription:
+      "Executive-level financial insights through forecasting, budgeting, and actionable financial intelligence.",
+    overview:
+      "Our CFO advisory support helps owners see the numbers behind growth decisions. We build forecasts, review budgets, and translate reports into clear next steps.",
+    includes: [
+      "Cash-flow forecasting",
+      "Budget vs. actual reviews",
+      "KPI dashboards",
+      "Leadership financial briefings",
+    ],
+    deliverables: [
+      "Monthly advisory summary",
+      "Forecast workbook",
+      "Priority action list",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Business team reviewing financial strategy charts",
+  },
+  {
+    slug: "tax-strategy",
+    title: "Tax Strategy",
+    shortDescription:
+      "Proactive tax planning that supports compliance while using available corporate tax advantages responsibly.",
+    overview:
+      "We look ahead at timing, documentation, and planning opportunities so tax decisions support growth instead of creating year-end surprises.",
+    includes: [
+      "Proactive annual tax planning",
+      "Deduction and credit documentation",
+      "Quarterly strategy check-ins",
+      "Compliance calendar support",
+    ],
+    deliverables: [
+      "Written tax strategy outline",
+      "Quarterly planning notes",
+      "Document checklist for your tax pro",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Financial planning charts and analytics",
+  },
+  {
+    slug: "loan-consultation",
+    title: "Loan Consultation",
+    shortDescription:
+      "Guidance through documentation, financial structuring, and commercial loan application strategy.",
+    overview:
+      "Lenders want clean numbers. We help prepare financial packages, clarify debt discussions, and organize the paperwork commercial applications typically require.",
+    includes: [
+      "Financial package preparation",
+      "Statement cleanup for lenders",
+      "Application document checklist",
+      "Debt schedule support",
+    ],
+    deliverables: [
+      "Lender-ready financial summary",
+      "Supporting schedules",
+      "Application document index",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Business professionals discussing loan documents",
+  },
+  {
+    slug: "virtual-cfo",
+    title: "Virtual CFO",
+    shortDescription:
+      "Predictive cash-flow modeling and executive guidance without the overhead of a full-time CFO.",
+    overview:
+      "A Virtual CFO engagement gives you senior financial oversight on a flexible schedule—forecasting, reporting, and decision support without a full-time hire.",
+    includes: [
+      "Recurring CFO office hours",
+      "Cash-flow and runway modeling",
+      "Board or owner reporting packs",
+      "Scenario planning for growth decisions",
+    ],
+    deliverables: [
+      "Monthly CFO pack",
+      "Rolling cash-flow model",
+      "Decision memo for key initiatives",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Business leaders collaborating in a financial planning meeting",
   },
 ];
 

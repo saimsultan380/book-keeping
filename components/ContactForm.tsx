@@ -161,16 +161,17 @@ export function ContactForm({
       {isFull ? (
         <div>
           <label htmlFor="plans" className="mb-1.5 block text-small font-medium">
-            Plans upload (optional)
+            Document upload (optional)
           </label>
           <input
             id="plans"
             type="file"
-            accept=".pdf,.dwg,.dxf,.zip"
+            accept=".pdf,.xlsx,.xls,.csv,.zip"
             className="block w-full text-small text-text-muted file:mr-4 file:rounded-pill file:border-0 file:bg-surface file:px-4 file:py-2 file:font-heading file:text-small file:font-semibold file:text-primary"
           />
           <p className="mt-1 text-small text-text-muted">
-            PDF preferred. Large files can be shared after we reply.
+            Statements or reports in PDF/Excel preferred. Large files can be
+            shared after we reply.
           </p>
         </div>
       ) : null}

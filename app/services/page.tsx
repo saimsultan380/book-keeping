@@ -17,9 +17,9 @@ import { siteConfig } from "@/config/site";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Construction Estimating Services",
+  title: "Bookkeeping & Financial Services",
   description:
-    "Quantity takeoff services, residential and commercial estimating, bid preparation, and detailed cost analysis from Doxo Collective.",
+    "Bookkeeping, corporate tax, CFO advisory, tax strategy, loan consultation, and virtual CFO services from Doxo Collective.",
   path: "/services/",
 });
 
@@ -33,14 +33,14 @@ export default function ServicesPage() {
           { label: "Home", href: "/" },
           { label: "Services" },
         ]}
-        intro="Construction estimating services built around accurate takeoffs and clear cost reports."
+        intro="Bookkeeping and financial advisory services built around accurate books and clear reporting."
       />
 
       <Section>
         <SectionHeading
           eyebrow="What We Offer"
-          title="Estimating Services for Every Bid"
-          intro="Six core services covering takeoffs, costing, and bid preparation."
+          title="Financial Services for Growing Businesses"
+          intro="Six core services covering bookkeeping, tax, CFO advisory, and loan support."
         />
         <div className="grid gap-gap sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
@@ -59,7 +59,7 @@ export default function ServicesPage() {
           <div>
             <SectionHeading
               eyebrow="Make Appointment"
-              title="Need an estimate? Make an appointment now"
+              title="Need a bookkeeper? Make an appointment now"
               className="mb-6 md:mb-6"
             />
             <ul className="space-y-4 text-body text-text-muted">
@@ -126,8 +126,8 @@ export default function ServicesPage() {
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <SectionHeading
             eyebrow="Testimonials"
-            title={`Trusted by contractors across ${siteConfig.countriesServed} countries`}
-            intro="Contractors rely on our takeoffs and cost reports when bid deadlines are tight."
+            title={`Trusted by businesses across ${siteConfig.countriesServed} countries`}
+            intro="Business owners rely on our books, tax packages, and advisory support when decisions cannot wait."
             className="mb-0 md:mb-0"
           />
           <TestimonialCarousel />
@@ -138,7 +138,7 @@ export default function ServicesPage() {
         <SectionHeading
           eyebrow="Pricing"
           title="Popular Packages"
-          intro="A selection of our estimating packages. See the full list on the pricing page."
+          intro="A selection of our financial packages. See the full list on the pricing page."
           action={{ label: "View Pricing", href: "/pricing/" }}
         />
         <div className="grid gap-gap md:grid-cols-3">

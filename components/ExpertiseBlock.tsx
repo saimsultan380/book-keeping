@@ -19,9 +19,9 @@ export function ExpertiseBlock() {
       <div className="grid items-center gap-12 lg:grid-cols-2">
         <FadeIn>
           <SectionHeading
-            eyebrow="Our Expertise"
-            title="Reliable Estimating Solutions for Your Projects"
-            intro="From early budgets to final bid packages, we deliver measured quantities and clear cost reports that help you bid with control."
+            eyebrow="Our Financial Expertise"
+            title="Strategic Financial Solutions for Your Business"
+            intro="From clean monthly books to CFO-level planning, we deliver reporting and advisory support that keeps your finances steady as you grow."
             className="mb-8 md:mb-8"
           />
           <div className="space-y-6">
@@ -50,7 +50,7 @@ export function ExpertiseBlock() {
           </ul>
           <div className="mt-8 rounded-md bg-primary p-8 text-text-on-dark">
             <p className="font-heading text-h3">
-              You Focus on the Build, We Handle the Numbers
+              You Run Your Business, We Will Handle Your Bookkeeping
             </p>
             <div className="mt-6">
               <Button href="/services/" variant="on-dark">

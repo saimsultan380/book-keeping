@@ -1,14 +1,14 @@
 export const siteConfig = {
   brand: "Doxo Collective",
   legalName: "Doxo Collective LLC", // PLACEHOLDER — confirm legal entity
-  tagline: "Accurate construction estimates you can bid on with confidence",
+  tagline: "Precision Accounting & Strategic Financial Growth",
   description:
-    "Professional quantity takeoffs, cost estimates, and bid preparation for residential and commercial contractors.",
+    "Your strategic partner for bookkeeping, tax optimization, CFO advisory, and loan strategy. We simplify finance so you can focus on building your business.",
   /** Canonical origin — always non-www HTTPS, no trailing slash. */
   url: "https://doxocollective.com",
   phone: "(555) 014-2800", // PLACEHOLDER
   phoneHref: "tel:+15550142800",
-  email: "estimates@doxocollective.com", // PLACEHOLDER
+  email: "info@doxocollective.com", // PLACEHOLDER
   address: {
     line1: "1840 Trade Center Drive, Suite 210", // PLACEHOLDER
     city: "Austin",
@@ -27,13 +27,13 @@ export const siteConfig = {
     linkedin: "https://linkedin.com/", // PLACEHOLDER
     instagram: "https://instagram.com/", // PLACEHOLDER
   },
-  youtubeId: "qThAWmHIe3U", // Construction estimating overview — replace with Doxo Collective intro when available
+  youtubeId: "bJTZbfq7amQ", // Bookkeeping 101 overview — replace with Doxo Collective intro when available
   logo: {
     mark: "/logo-mark.jpg",
     light: "/logo.svg",
     dark: "/logo-light.svg",
   },
-  topBarPromo: "Need a professional estimator?",
+  topBarPromo: "Need a professional bookkeeper?",
   topBarCta: "Book a Schedule Now",
   nav: [
     { label: "Home", href: "/" },

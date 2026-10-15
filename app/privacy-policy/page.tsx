@@ -41,8 +41,8 @@ export default function PrivacyPage() {
           <h2 className="text-h3 text-text">How we use information</h2>
           <p>
             We use submitted information to respond to inquiries, prepare
-            estimates, and — if you subscribe — send occasional updates. We do
-            not sell personal information.
+            consultations, and — if you subscribe — send occasional updates. We
+            do not sell personal information.
           </p>
           <h2 className="text-h3 text-text">Contact</h2>
           <p>

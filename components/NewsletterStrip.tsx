@@ -43,10 +43,11 @@ export function NewsletterStrip() {
       <div className="grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
         <div>
           <h3 className="font-heading text-h3 text-text-on-dark">
-            Stay informed on estimating practice
+            Subscribe to Our Newsletter
           </h3>
           <p className="mt-2 text-small text-text-on-dark-muted">
-            Occasional notes on takeoffs, pricing, and bid preparation. No spam.
+            Get updates, bookkeeping tips, and financial insights from Doxo
+            Collective. No spam.
           </p>
         </div>
         <form

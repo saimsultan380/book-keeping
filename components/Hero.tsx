@@ -15,8 +15,8 @@ export function Hero() {
   return (
     <section className="relative min-h-[78vh] flex items-center overflow-hidden">
       <Image
-        src="https://images.unsplash.com/photo-1541976590-713941681591?auto=format&fit=crop&w=2000&q=80"
-        alt="High-rise construction building under construction with cranes"
+        src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80"
+        alt="Finance professionals reviewing business reports"
         fill
         priority
         sizes="100vw"
@@ -27,9 +27,9 @@ export function Hero() {
         <div className="max-w-3xl">
           <h1 className="text-h1 text-text-on-dark">{siteConfig.tagline}</h1>
           <p className="mt-6 max-w-2xl text-body text-text-on-dark-muted">
-            Professional quantity takeoffs, cost estimates, and bid preparation
-            for contractors who need numbers they can trust before the bid due
-            date.
+            Your strategic partner for enterprise-level bookkeeping, tax
+            optimization, CFO advisory, and loan strategy. We simplify finance
+            so you can focus on building your business.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Button href="/contact-us/" variant="accent" size="lg">
@@ -47,7 +47,7 @@ export function Hero() {
             </button>
           </div>
           <p className="mt-10 text-small uppercase tracking-wide text-text-on-dark-muted">
-            Absolute accuracy · Transparent reporting · Dedicated support
+            Absolute accuracy · Transparent reporting · Dedicated advisory
           </p>
         </div>
       </Container>
@@ -55,7 +55,7 @@ export function Hero() {
         open={videoOpen}
         onClose={() => setVideoOpen(false)}
         youtubeId={siteConfig.youtubeId}
-        title="Construction estimating overview video"
+        title="Bookkeeping and financial services overview"
       />
     </section>
   );

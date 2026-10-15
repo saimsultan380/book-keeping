@@ -10,7 +10,7 @@ import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Contact Us",
-  description: `Contact ${siteConfig.brand} for quantity takeoffs, cost estimates, and bid preparation support.`,
+  description: `Contact ${siteConfig.brand} for bookkeeping, tax planning, CFO advisory, and loan consultation support.`,
   path: "/contact-us/",
 });
 
@@ -24,7 +24,7 @@ export default function ContactPage() {
           { label: "Home", href: "/" },
           { label: "Contact Us" },
         ]}
-        intro="Send your plans, question, or bid deadline. We respond during business hours."
+        intro="Send your question, books access details, or funding timeline. We respond during business hours."
       />
 
       <Section>
@@ -32,7 +32,7 @@ export default function ContactPage() {
           <div>
             <SectionHeading
               eyebrow="Get in Touch"
-              title="Request an Estimate"
+              title="Request a Consultation"
               intro="Complete the form and attach plans if ready. Large files can be shared after we reply."
               className="mb-8 md:mb-8"
             />

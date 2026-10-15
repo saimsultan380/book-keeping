@@ -24,7 +24,7 @@ const body = Source_Sans_3({
 export const metadata: Metadata = {
   metadataBase: new URL(canonicalUrl("/")),
   title: {
-    default: `${siteConfig.brand} | Construction Estimating Services`,
+    default: `${siteConfig.brand} | Bookkeeping, Tax & CFO Advisory`,
     template: `%s | ${siteConfig.brand}`,
   },
   description: siteConfig.description,
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: siteConfig.brand,
-    title: `${siteConfig.brand} | Construction Estimating Services`,
+    title: `${siteConfig.brand} | Bookkeeping, Tax & CFO Advisory`,
     description: siteConfig.description,
     url: canonicalUrl("/"),
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.brand} | Construction Estimating Services`,
+    title: `${siteConfig.brand} | Bookkeeping, Tax & CFO Advisory`,
     description: siteConfig.description,
   },
   robots: { index: true, follow: true },

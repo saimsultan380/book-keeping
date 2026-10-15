@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Check, Ruler, Users } from "lucide-react";
+import { Check, LineChart, ShieldCheck } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
@@ -7,10 +7,10 @@ import { Icon } from "@/components/ui/Icon";
 import { FadeIn } from "@/components/motion/FadeIn";
 
 const checklist = [
-  "Quantity Takeoffs",
-  "Material & Labor Costing",
-  "Bid Preparation",
-  "Detailed Reports",
+  "Bookkeeping Services",
+  "Tax Strategy",
+  "CFO Advisory",
+  "Loan Consultation",
 ];
 
 export function AboutBlock() {
@@ -21,8 +21,8 @@ export function AboutBlock() {
           <div className="relative">
             <div className="relative aspect-[4/5] overflow-hidden rounded-md">
               <Image
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80"
-                alt="Estimator reviewing construction drawings"
+                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1000&q=80"
+                alt="Advisors collaborating on financial planning"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
@@ -30,7 +30,7 @@ export function AboutBlock() {
             </div>
             <div className="absolute bottom-6 left-6 rounded-md bg-accent px-5 py-4 text-on-accent shadow-card">
               <p className="font-heading text-h3 leading-none">10+ Years</p>
-              <p className="mt-1 text-small">Estimating experience</p>
+              <p className="mt-1 text-small">Financial advisory experience</p>
             </div>
           </div>
         </FadeIn>
@@ -43,14 +43,14 @@ export function AboutBlock() {
           />
           <div className="space-y-4 text-body text-text-muted">
             <p>
-              Doxo Collective supports general contractors,
-              subcontractors, and developers with measured takeoffs and clear
-              cost reports. We treat every set of drawings as bid-critical work.
+              Doxo Collective provides authoritative financial consulting,
+              commercial loan strategy, and enterprise accounting services
+              designed to support long-term fiscal stability.
             </p>
             <p>
-              Our estimators document assumptions, flag missing scope, and
-              deliver workbooks your team can price quickly—without rewriting
-              someone else&apos;s numbers.
+              Whether you need a bookkeeping overhaul, strategic tax planning,
+              or help preparing commercial funding documents, our advisors act
+              as an extension of your leadership team.
             </p>
           </div>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -63,24 +63,24 @@ export function AboutBlock() {
           </ul>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             <div className="flex gap-3 rounded-md border border-border bg-card p-4">
-              <Icon icon={Ruler} boxed />
+              <Icon icon={LineChart} boxed />
               <div>
                 <p className="font-heading font-semibold text-text">
-                  Advanced Tools
+                  Advanced Analytics
                 </p>
                 <p className="mt-1 text-small text-text-muted">
-                  Digital takeoff and current cost data
+                  Clear reporting you can act on
                 </p>
               </div>
             </div>
             <div className="flex gap-3 rounded-md border border-border bg-card p-4">
-              <Icon icon={Users} boxed />
+              <Icon icon={ShieldCheck} boxed />
               <div>
                 <p className="font-heading font-semibold text-text">
                   Certified Team
                 </p>
                 <p className="mt-1 text-small text-text-muted">
-                  Experienced estimators on every package
+                  Experienced advisors on every engagement
                 </p>
               </div>
             </div>

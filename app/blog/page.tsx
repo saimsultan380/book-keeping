@@ -8,7 +8,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata: Metadata = createPageMetadata({
   title: "Blog",
   description:
-    "Articles on quantity takeoffs, unit costs, and preparing plans for faster construction estimates.",
+    "Articles on bookkeeping, tax readiness, cash-flow forecasting, and preparing financials for business loans.",
   path: "/blog/",
 });
 
@@ -22,7 +22,7 @@ export default function BlogPage() {
           { label: "Home", href: "/" },
           { label: "Blog" },
         ]}
-        intro="Practical reading for estimators and contractors."
+        intro="Practical reading for business owners and finance teams."
       />
       <Section>
         <div className="grid gap-gap md:grid-cols-3">

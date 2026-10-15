@@ -5,24 +5,24 @@ export type FaqItem = {
 
 export const serviceFaqs: FaqItem[] = [
   {
-    question: "What files do you need to start?",
+    question: "What do you need to start bookkeeping?",
     answer:
-      "PDF or CAD drawings, specifications, and any addenda. If you have a preferred bid form or cost codes, include those as well.",
+      "Bank and credit-card access (or statements), prior-year financials if available, and a list of open invoices or bills. We confirm software access before onboarding.",
   },
   {
-    question: "How long does a typical estimate take?",
+    question: "How often will I receive reports?",
     answer:
-      "Most residential packages turn around in 2–4 business days. Commercial and advanced scopes depend on drawing volume and deadline. We confirm timing before work begins.",
+      "Most bookkeeping clients receive monthly profit & loss and balance sheet reports after close. CFO and Virtual CFO clients also receive forecast and KPI packs on an agreed cadence.",
   },
   {
-    question: "Do you provide unit costs for my local market?",
+    question: "Do you file taxes for us?",
     answer:
-      "Yes. We price using current material and labor data appropriate to your region, and we note any allowances where market pricing is volatile.",
+      "We prepare organized packages and planning support. Final signing and filing are handled by your CPA or enrolled tax professional unless a separate engagement is agreed in writing.",
   },
   {
-    question: "Can you revise the estimate after an addendum?",
+    question: "Can you help with a loan application package?",
     answer:
-      "Yes. Revision support is available on every package. Complex multi-phase projects may include scheduled revision rounds.",
+      "Yes. Our loan consultation service cleans statements, builds supporting schedules, and assembles a lender-ready document index.",
   },
 ];
 
@@ -33,28 +33,27 @@ export type TeamMember = {
   imageAlt: string;
 };
 
-/** Team profiles — stock photos for display; swap for real headshots when available */
 export const teamMembers: TeamMember[] = [
   {
     name: "Marcus Hale",
-    role: "Senior Estimator",
+    role: "Lead Bookkeeper",
     image:
       "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
-    imageAlt: "Marcus Hale, Senior Estimator",
+    imageAlt: "Marcus Hale, Lead Bookkeeper",
   },
   {
     name: "Priya Nair",
-    role: "Quantity Surveyor",
+    role: "Tax Specialist",
     image:
       "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80",
-    imageAlt: "Priya Nair, Quantity Surveyor",
+    imageAlt: "Priya Nair, Tax Specialist",
   },
   {
     name: "Daniel Orth",
-    role: "Cost Analyst",
+    role: "CFO Advisor",
     image:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
-    imageAlt: "Daniel Orth, Cost Analyst",
+    imageAlt: "Daniel Orth, CFO Advisor",
   },
   {
     name: "Elena Vargas",
@@ -70,4 +69,4 @@ export const partnerLogos = [
   "Partner Two",
   "Partner Three",
   "Partner Four",
-]; // PLACEHOLDER names
+];

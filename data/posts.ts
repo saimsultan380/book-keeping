@@ -8,51 +8,50 @@ export type Post = {
   content: string[];
 };
 
-/** PLACEHOLDER articles — replace or expand before launch */
 export const posts: Post[] = [
   {
-    slug: "how-accurate-takeoffs-protect-your-bid",
-    title: "How Accurate Takeoffs Protect Your Bid",
+    slug: "why-clean-books-matter-before-tax-season",
+    title: "Why Clean Books Matter Before Tax Season",
     excerpt:
-      "A clean quantity takeoff reduces rework, change-order risk, and last-minute pricing mistakes.",
+      "Reconciled ledgers and organized receipts turn filing season into a checklist—not a crisis.",
     date: "2026-02-12",
     image:
-      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Construction worker reviewing blueprints",
+      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Financial documents and calculator",
     content: [
-      "An accurate quantity takeoff is the foundation of every competitive bid. When quantities are measured from the plans—and checked against specs and addenda—your pricing starts from known scope instead of assumptions.",
-      "Missed items show up later as change orders or lost margin. Over-counting pushes your number too high and can cost you the award. A disciplined takeoff process protects both outcomes.",
-      "At Doxo Collective, we organize quantities by trade, note exclusions, and deliver workbooks your team can price quickly during bid week.",
+      "Clean books are the foundation of accurate tax filing. When transactions are categorized and reconciled monthly, year-end work becomes a review—not a reconstruction.",
+      "Gaps in documentation create delays and missed opportunities. A steady bookkeeping cadence protects both compliance and decision-making throughout the year.",
+      "At Doxo Collective, we keep monthly closes on schedule so tax packages start from numbers you can trust.",
     ],
   },
   {
-    slug: "unit-costs-overhead-and-profit-explained",
-    title: "Unit Costs, Overhead, and Profit Explained",
+    slug: "cash-flow-forecasting-for-growing-teams",
+    title: "Cash Flow Forecasting for Growing Teams",
     excerpt:
-      "Understand how unit costs, markups, and contingency work together in a construction estimate.",
+      "A simple rolling forecast helps owners see runway, hiring capacity, and payment timing before problems appear.",
     date: "2026-01-28",
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Business analytics charts on a desk",
+    imageAlt: "Business analytics charts on a screen",
     content: [
-      "Unit costs convert measured quantities into dollars. Labor productivity, material prices, and equipment rates all feed into those numbers.",
-      "Overhead recovers the cost of running the business. Profit is the return for taking the work. Contingency covers known unknowns that are not yet in the drawings.",
-      "A transparent estimate shows each layer clearly so owners and contractors can discuss scope—not just argue about the bottom line.",
+      "Cash-flow forecasting connects what already happened in your books with what is likely to happen next. It is one of the highest-value uses of accurate bookkeeping.",
+      "Owners use forecasts to plan hiring, equipment purchases, and loan timing. Without them, growth decisions rely on bank-balance guesswork.",
+      "Our CFO advisory packages include a rolling forecast you can update as sales and expenses change.",
     ],
   },
   {
-    slug: "preparing-plans-for-a-faster-estimate",
-    title: "Preparing Plans for a Faster Estimate",
+    slug: "preparing-financials-for-a-business-loan",
+    title: "Preparing Financials for a Business Loan",
     excerpt:
-      "Complete drawings, current addenda, and clear specs help estimators deliver faster and with fewer clarifications.",
+      "Lenders look for clear statements, consistent categorization, and a complete document package.",
     date: "2026-01-08",
     image:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Architectural drawings spread on a table",
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Professionals reviewing business loan paperwork",
     content: [
-      "The quality of your estimate depends on the quality of the documents you send. Incomplete sets force assumptions, and assumptions create risk.",
-      "Send the latest drawings, specifications, and addenda in one package. Note preferred file formats and any known scope gaps before work begins.",
-      "When documents are complete, turnaround improves and your final report needs fewer revision cycles.",
+      "Commercial lenders review more than a single year of profit and loss. They want consistency, reconciliations, and supporting schedules that explain how the business operates.",
+      "Incomplete packages slow underwriting. Cleaning statements and assembling a document index before you apply saves weeks.",
+      "Loan consultation at Doxo Collective focuses on lender-ready packaging—not empty promises about approval.",
     ],
   },
 ];

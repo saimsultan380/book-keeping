@@ -13,22 +13,22 @@ import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
   title: "About Us",
-  description: `Learn about ${siteConfig.brand} — construction estimating specialists focused on accurate takeoffs and clear cost reports.`,
+  description: `Learn about ${siteConfig.brand} — bookkeeping, tax, CFO advisory, and loan strategy for growing businesses.`,
   path: "/about-us/",
 });
 
 const values = [
   {
     title: "Precision",
-    text: "Every quantity is measured from the drawings, not assumed from similar jobs.",
+    text: "Every ledger, report, and package is reviewed for accuracy before it reaches you or your lender.",
   },
   {
     title: "Clarity",
-    text: "Assumptions, exclusions, and unit costs are documented so your team can review quickly.",
+    text: "We explain the numbers in plain English so owners can make decisions without deciphering jargon.",
   },
   {
     title: "Reliability",
-    text: "Deadlines matter. We confirm timing before work starts and communicate early if scope grows.",
+    text: "Month-end closes and advisory calls stay on schedule. If something changes, we communicate early.",
   },
 ];
 
@@ -42,15 +42,15 @@ export default function AboutPage() {
           { label: "Home", href: "/" },
           { label: "About Us" },
         ]}
-        intro="A construction estimating firm built for contractors who need dependable numbers."
+        intro="A financial services firm built for businesses that need clean books and clear guidance."
       />
 
       <Section>
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="relative aspect-[4/3] overflow-hidden rounded-md">
             <Image
-              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80"
-              alt="Team reviewing construction plans"
+              src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80"
+              alt="Team collaborating on business planning"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
@@ -59,19 +59,19 @@ export default function AboutPage() {
           <div>
             <SectionHeading
               eyebrow="Our Story"
-              title="Built Around Bid Accuracy"
+              title="Built Around Financial Clarity"
               className="mb-6 md:mb-6"
             />
             <div className="space-y-4 text-body text-text-muted">
               <p>
-                {siteConfig.brand} was founded to give contractors a steady
-                estimating partner—especially during busy bid weeks when in-house
-                capacity is stretched.
+                {siteConfig.brand} was founded to give business owners a steady
+                financial partner—especially when growth outpaces in-house
+                accounting capacity.
               </p>
               <p>
-                Our mission is simple: deliver measured takeoffs and transparent
-                cost reports that protect your margin and support competitive
-                bids.
+                Our mission is simple: deliver accurate books, transparent
+                reporting, and practical advisory that supports long-term fiscal
+                stability.
               </p>
             </div>
           </div>
@@ -102,8 +102,8 @@ export default function AboutPage() {
       <Section>
         <SectionHeading
           eyebrow="Our Team"
-          title="Estimators Behind the Numbers"
-          intro="Experienced estimators, surveyors, and coordinators focused on clear takeoffs and on-time delivery."
+          title="Advisors Behind the Numbers"
+          intro="Experienced bookkeepers, tax specialists, and financial advisors focused on clear reporting and on-time delivery."
           align="center"
         />
         <div className="grid gap-gap sm:grid-cols-2 lg:grid-cols-4">
@@ -133,8 +133,8 @@ export default function AboutPage() {
         <div className="mx-auto max-w-3xl">
           <SectionHeading
             eyebrow="Testimonials"
-            title="What Contractors Say"
-            intro="Feedback from contractors who use our takeoffs and cost reports on live bids."
+            title="What Clients Say"
+            intro="Feedback from owners who rely on our books, tax packages, and advisory support."
             align="center"
           />
           <TestimonialCarousel />
