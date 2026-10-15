@@ -15,12 +15,12 @@ export function Hero() {
   return (
     <section className="relative min-h-[78vh] flex items-center overflow-hidden">
       <Image
-        src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=2000&q=80"
-        alt="Active construction site with steel framework"
+        src="https://images.unsplash.com/photo-1541976590-713941681591?auto=format&fit=crop&w=2000&q=80"
+        alt="High-rise construction building under construction with cranes"
         fill
         priority
         sizes="100vw"
-        className="object-cover"
+        className="object-cover object-center"
       />
       <div className="absolute inset-0 bg-overlay" />
       <Container className="relative z-10 py-section">
