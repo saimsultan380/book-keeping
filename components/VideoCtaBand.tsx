@@ -12,7 +12,7 @@ export function VideoCtaBand({
   description = "Book a short call. We will review your current setup and recommend the right mix of bookkeeping, tax support, or fractional CFO help.",
 }: VideoCtaBandProps) {
   return (
-    <section className="relative overflow-hidden py-section">
+    <section className="relative overflow-hidden border-b-[3px] border-white py-section">
       <Image
         src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80"
         alt=""
