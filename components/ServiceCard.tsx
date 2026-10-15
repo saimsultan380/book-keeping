@@ -30,14 +30,14 @@ export function ServiceCard({
           className="object-cover transition-transform duration-500 hover:scale-105"
         />
       </div>
-      <div className="p-6">
+      <div className="px-6 pb-8 pt-6">
         <h3 className="font-heading text-h3 text-text">{service.title}</h3>
         <p className="mt-3 line-clamp-2 text-small text-text-muted">
           {service.shortDescription}
         </p>
         <Link
           href={href}
-          className="mt-5 inline-flex items-center gap-2 font-heading text-small font-semibold text-accent hover:text-accent-hover transition-colors"
+          className="mt-5 inline-flex items-center gap-2 font-heading text-small font-semibold text-accent transition-colors hover:text-accent-hover"
         >
           {ctaLabel}
           <Icon icon={ArrowRight} size="sm" />
