@@ -9,14 +9,11 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { VideoCtaBand } from "@/components/VideoCtaBand";
-import { BlogCard } from "@/components/BlogCard";
-import { NewsletterStrip } from "@/components/NewsletterStrip";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { services } from "@/data/services";
 import { projects } from "@/data/projects";
-import { posts } from "@/data/posts";
 import { siteConfig } from "@/config/site";
 import { breadcrumbJsonLd, createPageMetadata } from "@/lib/seo";
 
@@ -96,23 +93,6 @@ export default function HomePage() {
 
       <ProcessSteps />
       <VideoCtaBand />
-
-      <Section>
-        <SectionHeading
-          eyebrow="Our Blog"
-          title="Latest Blog & Articles"
-          intro="Practical notes on bookkeeping, tax readiness, cash flow, and financial planning."
-          action={{ label: "View All", href: "/blog/" }}
-        />
-        <div className="grid gap-gap md:grid-cols-3">
-          {posts.map((post, i) => (
-            <FadeIn key={post.slug} delay={i * 0.05}>
-              <BlogCard post={post} />
-            </FadeIn>
-          ))}
-        </div>
-        <NewsletterStrip />
-      </Section>
     </>
   );
 }
