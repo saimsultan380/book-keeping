@@ -5,6 +5,7 @@ import type { Post } from "@/data/posts";
 import { Card } from "@/components/ui/Card";
 import { Icon } from "@/components/ui/Icon";
 import { formatDate } from "@/lib/utils";
+import { trailingPath } from "@/lib/seo";
 
 export function BlogCard({ post }: { post: Post }) {
   return (
@@ -23,7 +24,10 @@ export function BlogCard({ post }: { post: Post }) {
           {formatDate(post.date)}
         </time>
         <h3 className="mt-2 font-heading text-h3 text-text">
-          <Link href={`/blog/${post.slug}`} className="hover:text-accent">
+          <Link
+            href={trailingPath(`/blog/${post.slug}`)}
+            className="hover:text-accent"
+          >
             {post.title}
           </Link>
         </h3>
@@ -31,7 +35,7 @@ export function BlogCard({ post }: { post: Post }) {
           {post.excerpt}
         </p>
         <Link
-          href={`/blog/${post.slug}`}
+          href={trailingPath(`/blog/${post.slug}`)}
           className="mt-5 inline-flex items-center gap-2 font-heading text-small font-semibold text-accent hover:text-accent-hover"
         >
           Read More

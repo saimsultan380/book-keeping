@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { Card } from "@/components/ui/Card";
 import { Icon } from "@/components/ui/Icon";
 import type { Service } from "@/data/services";
+import { trailingPath } from "@/lib/seo";
 
 type ServiceCardProps = {
   service: Service;
@@ -16,7 +17,7 @@ export function ServiceCard({
   ctaLabel = "Read More",
   ctaHref,
 }: ServiceCardProps) {
-  const href = ctaHref ?? `/services/${service.slug}`;
+  const href = trailingPath(ctaHref ?? `/services/${service.slug}`);
 
   return (
     <Card>

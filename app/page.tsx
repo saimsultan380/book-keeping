@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Hero } from "@/components/Hero";
 import { AboutBlock } from "@/components/AboutBlock";
 import { ExpertiseBlock } from "@/components/ExpertiseBlock";
@@ -16,10 +17,26 @@ import { FadeIn } from "@/components/motion/FadeIn";
 import { services } from "@/data/services";
 import { projects } from "@/data/projects";
 import { posts } from "@/data/posts";
+import { siteConfig } from "@/config/site";
+import { breadcrumbJsonLd, createPageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = createPageMetadata({
+  title: `${siteConfig.brand} | Construction Estimating Services`,
+  description: siteConfig.description,
+  path: "/",
+});
+
+const homeBreadcrumbs = breadcrumbJsonLd([
+  { name: "Home", path: "/" },
+]);
 
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeBreadcrumbs) }}
+      />
       <Hero />
       <AboutBlock />
       <ExpertiseBlock />
@@ -29,7 +46,7 @@ export default function HomePage() {
           eyebrow="Our Services"
           title="What Service We Offer"
           intro="Quantity takeoffs, residential and commercial estimating, bid preparation, and detailed cost analysis."
-          action={{ label: "All Services", href: "/services" }}
+          action={{ label: "All Services", href: "/services/" }}
         />
         <div className="grid gap-gap sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, i) => (
@@ -72,7 +89,7 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="Why Choose Us"
             title="Trusted Estimating Support for Contractors"
-            intro="We measure carefully, document clearly, and return numbers your team can bid with. Sample testimonials below — replace with verified client quotes."
+            intro="We measure carefully, document clearly, and return numbers your team can bid with — feedback from contractors on live bids."
             className="mb-0 md:mb-0"
           />
           <TestimonialCarousel />
@@ -87,7 +104,7 @@ export default function HomePage() {
           eyebrow="Blog"
           title="Latest Articles"
           intro="Practical notes on quantity takeoffs, cost analysis, and bid preparation."
-          action={{ label: "View All", href: "/blog" }}
+          action={{ label: "View All", href: "/blog/" }}
         />
         <div className="grid gap-gap md:grid-cols-3">
           {posts.map((post, i) => (

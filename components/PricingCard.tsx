@@ -23,7 +23,7 @@ export function PricingCard({ pkg }: { pkg: PricingPackage }) {
           </li>
         ))}
       </ul>
-      <Button href="/contact-us" variant="primary" className="mt-8 w-full">
+      <Button href="/contact-us/" variant="primary" className="mt-8 w-full">
         Get Started
       </Button>
     </Card>

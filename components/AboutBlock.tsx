@@ -43,7 +43,7 @@ export function AboutBlock() {
           />
           <div className="space-y-4 text-body text-text-muted">
             <p>
-              Apex Quantity Estimating supports general contractors,
+              Doxo Collective supports general contractors,
               subcontractors, and developers with measured takeoffs and clear
               cost reports. We treat every set of drawings as bid-critical work.
             </p>
@@ -86,7 +86,7 @@ export function AboutBlock() {
             </div>
           </div>
           <div className="mt-8">
-            <Button href="/about-us" variant="primary">
+            <Button href="/about-us/" variant="primary">
               More About Us
             </Button>
           </div>

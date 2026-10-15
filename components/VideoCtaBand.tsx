@@ -27,7 +27,7 @@ export function VideoCtaBand({
           {description}
         </p>
         <div className="mt-8">
-          <Button href="/contact-us" variant="on-dark" size="lg">
+          <Button href="/contact-us/" variant="on-dark" size="lg">
             Schedule Consultation
           </Button>
         </div>

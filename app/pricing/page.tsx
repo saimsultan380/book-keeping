@@ -9,18 +9,21 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Icon } from "@/components/ui/Icon";
 import { pricingPackages } from "@/data/pricing";
 import { siteConfig } from "@/config/site";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Pricing",
   description:
     "Simple, transparent pricing for construction estimating packages — from basic takeoffs to advanced multi-trade estimates.",
-};
+  path: "/pricing/",
+});
 
 export default function PricingPage() {
   return (
     <>
       <PageBanner
         title="Pricing"
+        path="/pricing/"
         crumbs={[
           { label: "Home", href: "/" },
           { label: "Pricing" },

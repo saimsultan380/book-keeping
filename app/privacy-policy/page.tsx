@@ -2,17 +2,20 @@ import type { Metadata } from "next";
 import { PageBanner } from "@/components/PageBanner";
 import { Section } from "@/components/ui/Section";
 import { siteConfig } from "@/config/site";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Privacy Policy",
-  robots: { index: true, follow: true },
-};
+  description: `Privacy policy for ${siteConfig.brand} — how we collect and use information submitted through doxocollective.com.`,
+  path: "/privacy-policy/",
+});
 
 export default function PrivacyPage() {
   return (
     <>
       <PageBanner
         title="Privacy Policy"
+        path="/privacy-policy/"
         crumbs={[
           { label: "Home", href: "/" },
           { label: "Privacy Policy" },

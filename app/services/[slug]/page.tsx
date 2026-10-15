@@ -11,6 +11,7 @@ import { VideoCtaBand } from "@/components/VideoCtaBand";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Icon } from "@/components/ui/Icon";
+import { createPageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -21,11 +22,12 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const service = getServiceBySlug(slug);
-  if (!service) return {};
-  return {
+  if (!service) return { robots: { index: false, follow: false } };
+  return createPageMetadata({
     title: `${service.title} Services`,
     description: service.shortDescription,
-  };
+    path: `/services/${service.slug}/`,
+  });
 }
 
 export default async function ServiceDetailPage({ params }: Props) {
@@ -37,9 +39,10 @@ export default async function ServiceDetailPage({ params }: Props) {
     <>
       <PageBanner
         title={service.title}
+        path={`/services/${service.slug}/`}
         crumbs={[
           { label: "Home", href: "/" },
-          { label: "Services", href: "/services" },
+          { label: "Services", href: "/services/" },
           { label: service.title },
         ]}
         intro={service.shortDescription}

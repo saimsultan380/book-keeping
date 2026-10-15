@@ -5,6 +5,7 @@ import { getPostBySlug, posts } from "@/data/posts";
 import { PageBanner } from "@/components/PageBanner";
 import { Section } from "@/components/ui/Section";
 import { formatDate } from "@/lib/utils";
+import { createPageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -15,11 +16,13 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostBySlug(slug);
-  if (!post) return {};
-  return {
+  if (!post) return { robots: { index: false, follow: false } };
+  return createPageMetadata({
     title: post.title,
     description: post.excerpt,
-  };
+    path: `/blog/${post.slug}/`,
+    ogType: "article",
+  });
 }
 
 export default async function BlogPostPage({ params }: Props) {
@@ -31,9 +34,10 @@ export default async function BlogPostPage({ params }: Props) {
     <>
       <PageBanner
         title={post.title}
+        path={`/blog/${post.slug}/`}
         crumbs={[
           { label: "Home", href: "/" },
-          { label: "Blog", href: "/blog" },
+          { label: "Blog", href: "/blog/" },
           { label: post.title },
         ]}
         intro={formatDate(post.date)}

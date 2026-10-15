@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.doxocollective.com" }],
+      "destination": "https://doxocollective.com/:path*",
+      "permanent": true
+    }
+  ]
+}

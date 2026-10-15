@@ -2,16 +2,20 @@ import type { Metadata } from "next";
 import { PageBanner } from "@/components/PageBanner";
 import { Section } from "@/components/ui/Section";
 import { siteConfig } from "@/config/site";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Terms & Conditions",
-};
+  description: `Terms and conditions for using ${siteConfig.brand} website and construction estimating services.`,
+  path: "/terms-conditions/",
+});
 
 export default function TermsPage() {
   return (
     <>
       <PageBanner
         title="Terms & Conditions"
+        path="/terms-conditions/"
         crumbs={[
           { label: "Home", href: "/" },
           { label: "Terms & Conditions" },

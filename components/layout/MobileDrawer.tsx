@@ -6,6 +6,7 @@ import { X } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
+import { BrandLogo } from "./BrandLogo";
 import { cn } from "@/lib/utils";
 
 type MobileDrawerProps = {
@@ -36,9 +37,7 @@ export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
         aria-label="Mobile navigation"
       >
         <div className="flex items-center justify-between border-b border-border px-6 py-4">
-          <span className="font-heading text-h3 text-primary">
-            {siteConfig.brand}
-          </span>
+          <BrandLogo />
           <button
             type="button"
             onClick={onClose}
@@ -73,7 +72,7 @@ export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
             {siteConfig.phone}
           </a>
           <div onClick={onClose}>
-            <Button href="/contact-us" variant="accent" className="w-full">
+            <Button href="/contact-us/" variant="accent" className="w-full">
               Get Consultation
             </Button>
           </div>

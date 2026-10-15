@@ -36,7 +36,7 @@ export function TestimonialCarousel() {
         <div className="relative h-14 w-14 overflow-hidden rounded-pill">
           <Image
             src={item.avatar}
-            alt=""
+            alt={item.avatarAlt}
             fill
             sizes="56px"
             className="object-cover"

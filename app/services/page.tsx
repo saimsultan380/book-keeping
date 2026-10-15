@@ -14,18 +14,21 @@ import { services } from "@/data/services";
 import { pricingPackages } from "@/data/pricing";
 import { partnerLogos } from "@/data/faq";
 import { siteConfig } from "@/config/site";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Construction Estimating Services",
   description:
-    "Quantity takeoff services, residential and commercial estimating, bid preparation, and detailed cost analysis.",
-};
+    "Quantity takeoff services, residential and commercial estimating, bid preparation, and detailed cost analysis from Doxo Collective.",
+  path: "/services/",
+});
 
 export default function ServicesPage() {
   return (
     <>
       <PageBanner
         title="Services"
+        path="/services/"
         crumbs={[
           { label: "Home", href: "/" },
           { label: "Services" },
@@ -45,7 +48,7 @@ export default function ServicesPage() {
               key={service.slug}
               service={service}
               ctaLabel="Get Started"
-              ctaHref="/contact-us"
+              ctaHref="/contact-us/"
             />
           ))}
         </div>
@@ -81,7 +84,7 @@ export default function ServicesPage() {
               </li>
             </ul>
             <div className="mt-8">
-              <Button href="/contact-us" variant="accent">
+              <Button href="/contact-us/" variant="accent">
                 Schedule Consultation
               </Button>
             </div>
@@ -124,7 +127,7 @@ export default function ServicesPage() {
           <SectionHeading
             eyebrow="Testimonials"
             title={`Trusted by contractors across ${siteConfig.countriesServed} countries`}
-            intro="Placeholder figure and sample quotes — confirm before launch."
+            intro="Contractors rely on our takeoffs and cost reports when bid deadlines are tight."
             className="mb-0 md:mb-0"
           />
           <TestimonialCarousel />
@@ -136,7 +139,7 @@ export default function ServicesPage() {
           eyebrow="Pricing"
           title="Popular Packages"
           intro="A selection of our estimating packages. See the full list on the pricing page."
-          action={{ label: "View Pricing", href: "/pricing" }}
+          action={{ label: "View Pricing", href: "/pricing/" }}
         />
         <div className="grid gap-gap md:grid-cols-3">
           {pricingPackages.slice(0, 3).map((pkg) => (

@@ -3,11 +3,12 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import type { Project } from "@/data/projects";
 import { Icon } from "@/components/ui/Icon";
+import { trailingPath } from "@/lib/seo";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
     <Link
-      href={`/projects/${project.slug}`}
+      href={trailingPath(`/projects/${project.slug}`)}
       className="group relative block aspect-[4/3] overflow-hidden rounded-md"
     >
       <Image

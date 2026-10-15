@@ -73,7 +73,7 @@ export function PricingTabs() {
             <p className="mt-2 font-heading text-h2 text-primary">
               {selected.price}
             </p>
-            <Button href="/contact-us" variant="accent" className="mt-6 w-full">
+            <Button href="/contact-us/" variant="accent" className="mt-6 w-full">
               Get Started
             </Button>
           </div>

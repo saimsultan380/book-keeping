@@ -12,6 +12,8 @@ import { siteConfig } from "@/config/site";
 import { services } from "@/data/services";
 import { Container } from "@/components/ui/Container";
 import { Icon } from "@/components/ui/Icon";
+import { BrandLogo } from "./BrandLogo";
+import { PaymentIcons } from "./PaymentIcons";
 
 export function Footer() {
   return (
@@ -19,9 +21,7 @@ export function Footer() {
       <Container className="py-section">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <p className="font-heading text-h3 text-text-on-dark">
-              {siteConfig.brand}
-            </p>
+            <BrandLogo variant="dark" />
             <p className="mt-4 text-small text-text-on-dark-muted">
               {siteConfig.description}
             </p>
@@ -91,7 +91,7 @@ export function Footer() {
               {services.map((service) => (
                 <li key={service.slug}>
                   <Link
-                    href={`/services/${service.slug}`}
+                    href={`/services/${service.slug}/`}
                     className="text-small text-text-on-dark-muted hover:text-accent transition-colors"
                   >
                     {service.title}
@@ -134,16 +134,7 @@ export function Footer() {
           <p className="text-small text-text-on-dark-muted">
             © 2026 {siteConfig.brand}. All rights reserved.
           </p>
-          <div className="flex flex-wrap gap-3">
-            {siteConfig.paymentMethods.map((method) => (
-              <span
-                key={method}
-                className="rounded-sm border border-on-dark-line px-3 py-1 text-small text-text-on-dark-muted"
-              >
-                {method}
-              </span>
-            ))}
-          </div>
+          <PaymentIcons />
         </div>
       </Container>
     </footer>

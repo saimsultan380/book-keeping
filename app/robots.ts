@@ -1,13 +1,16 @@
 import type { MetadataRoute } from "next";
-import { siteConfig } from "@/config/site";
+import { getSiteOrigin } from "@/lib/seo";
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: {
-      userAgent: "*",
-      allow: "/",
-      disallow: ["/styleguide", "/api/"],
-    },
-    sitemap: `${siteConfig.url}/sitemap.xml`,
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+        disallow: ["/styleguide/", "/styleguide", "/api/"],
+      },
+    ],
+    sitemap: `${getSiteOrigin()}/sitemap.xml`,
+    host: getSiteOrigin(),
   };
 }

@@ -22,7 +22,7 @@ export const posts: Post[] = [
     content: [
       "An accurate quantity takeoff is the foundation of every competitive bid. When quantities are measured from the plans—and checked against specs and addenda—your pricing starts from known scope instead of assumptions.",
       "Missed items show up later as change orders or lost margin. Over-counting pushes your number too high and can cost you the award. A disciplined takeoff process protects both outcomes.",
-      "At Apex Quantity Estimating, we organize quantities by trade, note exclusions, and deliver workbooks your team can price quickly during bid week.",
+      "At Doxo Collective, we organize quantities by trade, note exclusions, and deliver workbooks your team can price quickly during bid week.",
     ],
   },
   {

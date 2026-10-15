@@ -32,7 +32,7 @@ export function Hero() {
             date.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <Button href="/contact-us" variant="accent" size="lg">
+            <Button href="/contact-us/" variant="accent" size="lg">
               Contact Us
             </Button>
             <button

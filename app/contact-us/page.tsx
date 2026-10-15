@@ -6,17 +6,20 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Icon } from "@/components/ui/Icon";
 import { siteConfig } from "@/config/site";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Contact Us",
   description: `Contact ${siteConfig.brand} for quantity takeoffs, cost estimates, and bid preparation support.`,
-};
+  path: "/contact-us/",
+});
 
 export default function ContactPage() {
   return (
     <>
       <PageBanner
         title="Contact Us"
+        path="/contact-us/"
         crumbs={[
           { label: "Home", href: "/" },
           { label: "Contact Us" },

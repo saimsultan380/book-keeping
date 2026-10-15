@@ -2,16 +2,20 @@ import type { Metadata } from "next";
 import { PageBanner } from "@/components/PageBanner";
 import { Section } from "@/components/ui/Section";
 import { siteConfig } from "@/config/site";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Refund Policy",
-};
+  description: `Refund policy for ${siteConfig.brand} estimating services — terms for cancellations and partial refunds.`,
+  path: "/refund-policy/",
+});
 
 export default function RefundPage() {
   return (
     <>
       <PageBanner
         title="Refund Policy"
+        path="/refund-policy/"
         crumbs={[
           { label: "Home", href: "/" },
           { label: "Refund Policy" },

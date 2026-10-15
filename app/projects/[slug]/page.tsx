@@ -6,6 +6,7 @@ import { PageBanner } from "@/components/PageBanner";
 import { VideoCtaBand } from "@/components/VideoCtaBand";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
+import { createPageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -16,11 +17,12 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const project = projects.find((p) => p.slug === slug);
-  if (!project) return {};
-  return {
+  if (!project) return { robots: { index: false, follow: false } };
+  return createPageMetadata({
     title: project.title,
     description: project.excerpt,
-  };
+    path: `/projects/${project.slug}/`,
+  });
 }
 
 export default async function ProjectPage({ params }: Props) {
@@ -32,9 +34,9 @@ export default async function ProjectPage({ params }: Props) {
     <>
       <PageBanner
         title={project.title}
+        path={`/projects/${project.slug}/`}
         crumbs={[
           { label: "Home", href: "/" },
-          { label: "Projects" },
           { label: project.title },
         ]}
         intro={`${project.category} · Placeholder project case study`}
@@ -61,7 +63,7 @@ export default async function ProjectPage({ params }: Props) {
               permissions are available.
             </p>
             <div className="mt-8">
-              <Button href="/contact-us" variant="accent">
+              <Button href="/contact-us/" variant="accent">
                 Discuss a Similar Project
               </Button>
             </div>

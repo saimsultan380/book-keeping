@@ -8,6 +8,7 @@ import { siteConfig } from "@/config/site";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
+import { BrandLogo } from "./BrandLogo";
 import { MobileDrawer } from "./MobileDrawer";
 import { cn } from "@/lib/utils";
 
@@ -36,9 +37,7 @@ export function Header() {
         )}
       >
         <Container className="flex h-header items-center justify-between gap-4">
-          <Link href="/" className="shrink-0 font-heading text-h3 text-primary">
-            <span className="block leading-tight">{siteConfig.brand}</span>
-          </Link>
+          <BrandLogo className="shrink-0" />
 
           <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">
             {siteConfig.nav.map((item) => (
@@ -66,7 +65,7 @@ export function Header() {
               <Icon icon={Phone} size="sm" className="text-accent" />
               {siteConfig.phone}
             </a>
-            <Button href="/contact-us" variant="accent">
+            <Button href="/contact-us/" variant="accent">
               Get Consultation
             </Button>
           </div>

@@ -53,7 +53,7 @@ export function ExpertiseBlock() {
               You Focus on the Build, We Handle the Numbers
             </p>
             <div className="mt-6">
-              <Button href="/services" variant="on-dark">
+              <Button href="/services/" variant="on-dark">
                 View Services
               </Button>
             </div>

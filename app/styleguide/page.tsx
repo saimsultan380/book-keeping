@@ -6,11 +6,14 @@ import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Icon } from "@/components/ui/Icon";
 import { ContactForm } from "@/components/ContactForm";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Styleguide",
-  robots: { index: false, follow: false },
-};
+  description: "Internal design system styleguide — not for public indexing.",
+  path: "/styleguide/",
+  noIndex: true,
+});
 
 const colors = [
   { name: "primary", className: "bg-primary" },

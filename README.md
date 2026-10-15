@@ -1,11 +1,11 @@
-# Apex Quantity Estimating
+# Doxo Collective
 
-Professional corporate website for a **construction estimating** company (quantity takeoffs, cost estimates, bid preparation). Built with Next.js App Router, TypeScript, Tailwind CSS, and a token-driven theme system.
+Professional corporate website for **Doxo Collective** (`doxocollective.com`) — a construction estimating company (quantity takeoffs, cost estimates, bid preparation). Built with Next.js App Router, TypeScript, Tailwind CSS, and a token-driven theme system.
 
 ## Assumptions
 
-- Brand name set to **Apex Quantity Estimating** (not copied from the reference). Confirm or change in `config/site.ts`.
-- Contact details, address, domain, social URLs, and YouTube video ID are **placeholders**.
+- Brand name set to **Doxo Collective** with domain **https://www.doxocollective.com**. Confirm legal entity name in `config/site.ts`.
+- Contact details, address, social URLs, and YouTube video ID are **placeholders**.
 - Pricing ranges follow the brief as editable placeholders — confirm before launch.
 - Stats, testimonials, team members, projects, and partner logos are flagged samples.
 - Legal pages contain clearly marked placeholder text for attorney review.

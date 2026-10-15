@@ -9,11 +9,13 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { teamMembers } from "@/data/faq";
 import { siteConfig } from "@/config/site";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "About Us",
   description: `Learn about ${siteConfig.brand} — construction estimating specialists focused on accurate takeoffs and clear cost reports.`,
-};
+  path: "/about-us/",
+});
 
 const values = [
   {
@@ -35,6 +37,7 @@ export default function AboutPage() {
     <>
       <PageBanner
         title="About Us"
+        path="/about-us/"
         crumbs={[
           { label: "Home", href: "/" },
           { label: "About Us" },
@@ -100,7 +103,7 @@ export default function AboutPage() {
         <SectionHeading
           eyebrow="Our Team"
           title="Estimators Behind the Numbers"
-          intro="Placeholder team profiles — replace with real names and photos before launch."
+          intro="Experienced estimators, surveyors, and coordinators focused on clear takeoffs and on-time delivery."
           align="center"
         />
         <div className="grid gap-gap sm:grid-cols-2 lg:grid-cols-4">
@@ -109,7 +112,7 @@ export default function AboutPage() {
               <div className="relative mx-auto aspect-square overflow-hidden rounded-md">
                 <Image
                   src={member.image}
-                  alt=""
+                  alt={member.imageAlt}
                   fill
                   sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover"
@@ -131,7 +134,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="Testimonials"
             title="What Contractors Say"
-            intro="Sample quotes flagged as placeholders."
+            intro="Feedback from contractors who use our takeoffs and cost reports on live bids."
             align="center"
           />
           <TestimonialCarousel />

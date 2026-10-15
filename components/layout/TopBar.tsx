@@ -11,7 +11,7 @@ export function TopBar() {
         <p className="flex items-center gap-2">
           <span>{siteConfig.topBarPromo}</span>
           <Link
-            href="/contact-us"
+            href="/contact-us/"
             className="font-semibold text-accent hover:text-accent-hover transition-colors"
           >
             {siteConfig.topBarCta} →
