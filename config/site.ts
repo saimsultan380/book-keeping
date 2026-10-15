@@ -47,6 +47,7 @@ export const siteConfig = {
     { label: "About Us", href: "/about-us/" },
     { label: "Services", href: "/services/" },
     { label: "Pricing", href: "/pricing/" },
+    { label: "Blog", href: "/blog/" },
     { label: "Contact Us", href: "/contact-us/" },
     { label: "Privacy Policy", href: "/privacy-policy/" },
     { label: "Refund Policy", href: "/refund-policy/" },

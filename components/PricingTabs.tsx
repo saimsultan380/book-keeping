@@ -70,7 +70,7 @@ export function PricingTabs() {
           </div>
           <div className="rounded-md bg-surface p-6 text-center lg:min-w-[220px]">
             <p className="text-small text-text-muted">Starting range</p>
-            <p className="mt-2 font-heading text-h2 text-primary">
+            <p className="mt-2 font-heading text-h3 whitespace-nowrap text-primary">
               {selected.price}
             </p>
             <Button href="/contact-us/" variant="accent" className="mt-6 w-full">

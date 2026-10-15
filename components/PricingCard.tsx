@@ -9,7 +9,9 @@ export function PricingCard({ pkg }: { pkg: PricingPackage }) {
     <Card className="flex h-full flex-col p-6" hover>
       <p className="text-eyebrow uppercase text-accent">{pkg.forWhom}</p>
       <h3 className="mt-2 font-heading text-h3 text-text">{pkg.name}</h3>
-      <p className="mt-4 font-heading text-h2 text-primary">{pkg.price}</p>
+      <p className="mt-4 font-heading text-h3 whitespace-nowrap text-primary">
+        {pkg.price}
+      </p>
       <p className="mt-4 text-small text-text-muted">{pkg.description}</p>
       <ul className="mt-6 flex-1 space-y-3">
         {pkg.includes.map((item) => (
