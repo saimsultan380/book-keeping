@@ -44,11 +44,14 @@ export function PricingTabs() {
         role="tabpanel"
         id={`panel-${selected.id}`}
         aria-labelledby={`tab-${selected.id}`}
-        className="mt-8 rounded-md border border-border bg-card p-8 shadow-card"
+        className="mt-8 overflow-hidden rounded-md border border-border bg-card shadow-card"
       >
-        <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+        <div className="flex flex-col gap-6 p-8 lg:flex-row lg:items-start lg:justify-between lg:p-10">
           <div className="max-w-2xl">
-            <p className="text-eyebrow uppercase text-accent">{selected.forWhom}</p>
+            <div className="mb-4 h-1 w-12 bg-accent" aria-hidden />
+            <p className="text-eyebrow uppercase tracking-wide text-accent">
+              {selected.forWhom}
+            </p>
             <h3 className="mt-2 font-heading text-h3 text-text">
               {selected.name}
             </h3>
@@ -68,12 +71,12 @@ export function PricingTabs() {
               ))}
             </ul>
           </div>
-          <div className="rounded-md bg-surface p-6 text-center lg:min-w-[220px]">
-            <p className="text-small text-text-muted">Starting range</p>
-            <p className="mt-2 font-heading text-h3 whitespace-nowrap text-primary">
+          <div className="rounded-md bg-primary p-6 text-center text-text-on-dark lg:min-w-[240px]">
+            <p className="text-small text-text-on-dark-muted">Starting range</p>
+            <p className="mt-2 font-heading text-h3 whitespace-nowrap text-text-on-dark">
               {selected.price}
             </p>
-            <Button href="/contact-us/" variant="accent" className="mt-6 w-full">
+            <Button href="/contact-us/" variant="on-dark" className="mt-6 w-full">
               Get Started
             </Button>
           </div>

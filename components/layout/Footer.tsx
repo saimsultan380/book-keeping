@@ -17,7 +17,7 @@ import { PaymentIcons } from "./PaymentIcons";
 
 export function Footer() {
   return (
-    <footer className="bg-surface-dark text-text-on-dark">
+    <footer className="border-t border-white/30 bg-surface-dark text-text-on-dark">
       <Container className="py-section">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>

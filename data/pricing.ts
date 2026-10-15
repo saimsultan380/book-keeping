@@ -5,6 +5,8 @@ export type PricingPackage = {
   price: string;
   description: string;
   includes: string[];
+  /** Middle-column highlight in the pricing grid */
+  featured?: boolean;
 };
 
 /** PLACEHOLDER — confirm price ranges with client before launch */
@@ -36,6 +38,7 @@ export const pricingPackages: PricingPackage[] = [
       "Estimated tax notes",
       "CPA coordination support",
     ],
+    featured: true,
   },
   {
     id: "cfo-advisory",
@@ -78,6 +81,7 @@ export const pricingPackages: PricingPackage[] = [
       "Debt schedule support",
       "Document index for lenders",
     ],
+    featured: true,
   },
   {
     id: "virtual-cfo",

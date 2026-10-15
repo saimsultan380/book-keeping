@@ -5,14 +5,13 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { PricingCard } from "@/components/PricingCard";
-import { ContactForm } from "@/components/ContactForm";
+import { VideoCtaBand } from "@/components/VideoCtaBand";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
 import { services } from "@/data/services";
 import { pricingPackages } from "@/data/pricing";
-import { partnerLogos } from "@/data/faq";
 import { siteConfig } from "@/config/site";
 import { createPageMetadata } from "@/lib/seo";
 
@@ -101,25 +100,6 @@ export default function ServicesPage() {
         </div>
       </Section>
 
-      <Section>
-        <SectionHeading
-          eyebrow="Partners"
-          title="Trusted Across Projects"
-          intro="Placeholder partner names — replace with real client or partner logos."
-          align="center"
-        />
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-          {partnerLogos.map((name) => (
-            <div
-              key={name}
-              className="flex h-24 items-center justify-center rounded-md border border-border bg-surface text-small font-heading font-semibold text-text-muted"
-            >
-              {name}
-            </div>
-          ))}
-        </div>
-      </Section>
-
       <ProcessSteps variant="surface" />
 
       <Section>
@@ -148,16 +128,10 @@ export default function ServicesPage() {
         </div>
       </Section>
 
-      <Section>
-        <div className="mx-auto max-w-2xl">
-          <SectionHeading
-            eyebrow="Contact"
-            title="Request a Service Quote"
-            align="center"
-          />
-          <ContactForm variant="compact" />
-        </div>
-      </Section>
+      <VideoCtaBand
+        title="Ready to Get Started With the Right Service?"
+        description="Tell us what you need—bookkeeping, tax support, or CFO guidance—and we will recommend a clear next step."
+      />
     </>
   );
 }

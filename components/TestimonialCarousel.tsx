@@ -21,19 +21,20 @@ export function TestimonialCarousel() {
 
   return (
     <div
-      className="rounded-md border border-border bg-card p-8 shadow-card"
+      className="rounded-md border border-border bg-card p-8 shadow-card md:p-10"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       aria-roledescription="carousel"
       aria-label="Client testimonials"
     >
+      <div className="mb-6 h-1 w-12 bg-accent" aria-hidden />
       <blockquote>
-        <p className="font-heading text-h3 text-text leading-relaxed">
+        <p className="font-heading text-h3 leading-relaxed text-text">
           “{item.quote}”
         </p>
       </blockquote>
-      <div className="mt-8 flex items-center gap-4">
-        <div className="relative h-14 w-14 overflow-hidden rounded-pill">
+      <div className="mt-8 flex items-center gap-4 border-t border-border pt-6">
+        <div className="relative h-14 w-14 overflow-hidden rounded-pill border border-border">
           <Image
             src={item.avatar}
             alt={item.avatarAlt}

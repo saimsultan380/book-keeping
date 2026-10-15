@@ -35,10 +35,3 @@ export const teamMembers: TeamMember[] = [
     imageAlt: "Elena Vargas, Client Coordinator",
   },
 ];
-
-export const partnerLogos = [
-  "Partner One",
-  "Partner Two",
-  "Partner Three",
-  "Partner Four",
-];

@@ -72,21 +72,6 @@ export default function ContactPage() {
                 </li>
               </ul>
             </div>
-
-            <div className="overflow-hidden rounded-md border border-border bg-surface">
-              <div className="flex aspect-[4/3] items-center justify-center p-8 text-center">
-                <div>
-                  <p className="font-heading text-h3 text-text">Map Placeholder</p>
-                  <p className="mt-2 text-small text-text-muted">
-                    Embed Google Maps or another map provider here once the final
-                    address is confirmed.
-                  </p>
-                  <p className="mt-4 text-small text-text">
-                    {siteConfig.address.full}
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </Section>
