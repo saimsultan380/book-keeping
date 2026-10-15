@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { PageBanner } from "@/components/PageBanner";
-import { CounterBand } from "@/components/CounterBand";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { VideoCtaBand } from "@/components/VideoCtaBand";
@@ -49,8 +48,8 @@ export default function AboutPage() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="relative aspect-[4/3] overflow-hidden rounded-md">
             <Image
-              src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80"
-              alt="Team collaborating on business planning"
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=80"
+              alt="Finance advisors collaborating on client books and reports"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
@@ -96,8 +95,6 @@ export default function AboutPage() {
           ))}
         </div>
       </Section>
-
-      <CounterBand />
 
       <Section>
         <SectionHeading

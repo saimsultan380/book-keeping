@@ -21,16 +21,12 @@ export function AboutBlock() {
           <div className="relative">
             <div className="relative aspect-[4/5] overflow-hidden rounded-md">
               <Image
-                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1000&q=80"
-                alt="Advisors collaborating on financial planning"
+                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1000&q=80"
+                alt="Finance advisors collaborating on client books and reports"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
+                className="object-cover object-center"
               />
-            </div>
-            <div className="absolute bottom-6 left-6 rounded-md bg-accent px-5 py-4 text-on-accent shadow-card">
-              <p className="font-heading text-h3 leading-none">10+ Years</p>
-              <p className="mt-1 text-small">Supporting growing businesses</p>
             </div>
           </div>
         </FadeIn>

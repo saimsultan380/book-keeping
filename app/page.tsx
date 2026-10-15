@@ -4,7 +4,6 @@ import { AboutBlock } from "@/components/AboutBlock";
 import { ExpertiseBlock } from "@/components/ExpertiseBlock";
 import { ServiceCard } from "@/components/ServiceCard";
 import { PricingTabs } from "@/components/PricingTabs";
-import { CounterBand } from "@/components/CounterBand";
 import { ProjectCard } from "@/components/ProjectCard";
 import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { ProcessSteps } from "@/components/ProcessSteps";
@@ -61,8 +60,6 @@ export default function HomePage() {
         />
         <PricingTabs />
       </Section>
-
-      <CounterBand />
 
       <Section id="selected-work">
         <SectionHeading

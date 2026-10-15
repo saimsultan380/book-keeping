@@ -8,12 +8,12 @@ export function Hero() {
   return (
     <section className="relative flex min-h-[88vh] items-center overflow-hidden border-b border-white/20">
       <Image
-        src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2400&q=80"
-        alt="Modern office workspace with natural light"
+        src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=2400&q=80"
+        alt="Financial advisor presenting reports in a business meeting"
         fill
         priority
         sizes="100vw"
-        className="object-cover object-[center_40%] scale-105"
+        className="object-cover object-[center_25%]"
       />
       <div className="absolute inset-0 bg-overlay" />
       <div className="absolute inset-0 bg-primary/25" />
