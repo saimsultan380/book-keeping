@@ -34,8 +34,8 @@ export default function PricingPage() {
       <Section>
         <SectionHeading
           eyebrow="Packages"
-          title="Choose the Right Financial Package"
-          intro="Ranges are placeholders pending confirmation. Final pricing depends on transaction volume, entity complexity, and meeting cadence."
+          title="Straightforward Pricing for Real Work"
+          intro="Published ranges are starting points. We confirm scope after reviewing your accounts, tools, and reporting needs."
           align="center"
         />
         <div className="grid gap-gap md:grid-cols-2 lg:grid-cols-3">

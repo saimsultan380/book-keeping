@@ -12,8 +12,8 @@ export function ProcessSteps({
     <Section variant={variant}>
       <SectionHeading
         eyebrow="Our Process"
-        title="A Clearer Path to Financial Confidence"
-        intro="We simplify complex financial decisions with practical guidance tailored to your business."
+        title="A Simple Path from Messy Books to Clear Reports"
+        intro="Three steps. No jargon wall. You always know what happens next."
         align="center"
       />
       <div className="relative grid gap-8 md:grid-cols-3">

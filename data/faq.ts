@@ -1,31 +1,3 @@
-export type FaqItem = {
-  question: string;
-  answer: string;
-};
-
-export const serviceFaqs: FaqItem[] = [
-  {
-    question: "What do you need to start bookkeeping?",
-    answer:
-      "Bank and credit-card access (or statements), prior-year financials if available, and a list of open invoices or bills. We confirm software access before onboarding.",
-  },
-  {
-    question: "How often will I receive reports?",
-    answer:
-      "Most bookkeeping clients receive monthly profit & loss and balance sheet reports after close. CFO and Virtual CFO clients also receive forecast and KPI packs on an agreed cadence.",
-  },
-  {
-    question: "Do you file taxes for us?",
-    answer:
-      "We prepare organized packages and planning support. Final signing and filing are handled by your CPA or enrolled tax professional unless a separate engagement is agreed in writing.",
-  },
-  {
-    question: "Can you help with a loan application package?",
-    answer:
-      "Yes. Our loan consultation service cleans statements, builds supporting schedules, and assembles a lender-ready document index.",
-  },
-];
-
 export type TeamMember = {
   name: string;
   role: string;

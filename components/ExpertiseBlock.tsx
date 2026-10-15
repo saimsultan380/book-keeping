@@ -8,9 +8,9 @@ import { expertiseBars } from "@/data/stats";
 import { FadeIn } from "@/components/motion/FadeIn";
 
 const points = [
-  "Constant Improvement",
-  "Commitment to Customers",
-  "Best Quality You Can Get",
+  "Disciplined monthly closes",
+  "Direct access to your advisor",
+  "Reports owners actually use",
 ];
 
 export function ExpertiseBlock() {
@@ -19,9 +19,9 @@ export function ExpertiseBlock() {
       <div className="grid items-center gap-12 lg:grid-cols-2">
         <FadeIn>
           <SectionHeading
-            eyebrow="Our Financial Expertise"
-            title="Strategic Financial Solutions for Your Business"
-            intro="From clean monthly books to CFO-level planning, we deliver reporting and advisory support that keeps your finances steady as you grow."
+            eyebrow="How We Help"
+            title="Accounting Work That Supports Real Decisions"
+            intro="From reconciled books to cash-flow planning, we give you a steady finance rhythm so surprises show up early—not at tax time."
             className="mb-8 md:mb-8"
           />
           <div className="space-y-6">
@@ -50,7 +50,7 @@ export function ExpertiseBlock() {
           </ul>
           <div className="mt-8 rounded-md bg-primary p-8 text-text-on-dark">
             <p className="font-heading text-h3">
-              You Run Your Business, We Will Handle Your Bookkeeping
+              Focus on customers and product. We will keep the books current.
             </p>
             <div className="mt-6">
               <Button href="/services/" variant="on-dark">

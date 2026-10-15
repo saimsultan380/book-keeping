@@ -8,8 +8,8 @@ type VideoCtaBandProps = {
 };
 
 export function VideoCtaBand({
-  title = "Ready to Optimize Your Financial Architecture?",
-  description = "Contact us today to schedule a review of your accounting setup, compliance status, and growth objectives.",
+  title = "Ready for Books You Can Trust Every Month?",
+  description = "Book a short call. We will review your current setup and recommend the right mix of bookkeeping, tax support, or fractional CFO help.",
 }: VideoCtaBandProps) {
   return (
     <section className="relative overflow-hidden py-section">

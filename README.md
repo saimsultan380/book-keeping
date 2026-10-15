@@ -2,7 +2,7 @@
 
 Professional corporate website for **Doxo Collective** (`doxocollective.com`) — bookkeeping, tax, CFO advisory, and loan strategy services. Built with Next.js App Router, TypeScript, Tailwind CSS, and a token-driven theme system.
 
-Layout and section rhythm follow the reference structure of [perfectoestimatingservices.us](https://perfectoestimatingservices.us/). Visible copy is original bookkeeping/finance content aligned to that homepage service mix — not construction estimating.
+Layout and section rhythm follow the reference structure of [perfectoestimatingservices.us](https://perfectoestimatingservices.us/). All visible marketing copy is original to Doxo Collective—service mix only (bookkeeping, tax, CFO, loans), never verbatim headlines or blurbs from the reference.
 
 ## Assumptions
 

@@ -59,7 +59,7 @@ export default function ServicesPage() {
           <div>
             <SectionHeading
               eyebrow="Make Appointment"
-              title="Need a bookkeeper? Make an appointment now"
+              title="Want cleaner books this month? Let’s talk."
               className="mb-6 md:mb-6"
             />
             <ul className="space-y-4 text-body text-text-muted">

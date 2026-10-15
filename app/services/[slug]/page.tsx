@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { Check } from "lucide-react";
+import { Check, Clock3 } from "lucide-react";
 import { getServiceBySlug, services } from "@/data/services";
-import { processSteps } from "@/data/process";
-import { serviceFaqs } from "@/data/faq";
 import { PageBanner } from "@/components/PageBanner";
-import { ProcessSteps } from "@/components/ProcessSteps";
 import { VideoCtaBand } from "@/components/VideoCtaBand";
+import { Button } from "@/components/ui/Button";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Icon } from "@/components/ui/Icon";
@@ -49,8 +47,8 @@ export default async function ServiceDetailPage({ params }: Props) {
       />
 
       <Section>
-        <div className="grid items-start gap-12 lg:grid-cols-2">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-md">
+        <div className="grid items-start gap-8 md:gap-10 lg:grid-cols-2 lg:gap-12">
+          <div className="relative aspect-[16/10] w-full overflow-hidden rounded-md sm:aspect-[4/3]">
             <Image
               src={service.image}
               alt={service.imageAlt}
@@ -60,13 +58,34 @@ export default async function ServiceDetailPage({ params }: Props) {
               priority
             />
           </div>
-          <div>
+          <div className="min-w-0">
             <SectionHeading
               eyebrow="Overview"
-              title={`Professional ${service.title.toLowerCase()} for growing businesses`}
+              title={`${service.title} built for growing businesses`}
               className="mb-6 md:mb-6"
             />
-            <p className="text-body text-text-muted">{service.overview}</p>
+            <div className="space-y-4 text-body text-text-muted">
+              <p>{service.overview}</p>
+              {service.overviewExtra.map((paragraph) => (
+                <p key={paragraph.slice(0, 40)}>{paragraph}</p>
+              ))}
+            </div>
+            <div className="mt-6 flex gap-3 rounded-md border border-border bg-surface p-4">
+              <Icon icon={Clock3} className="mt-0.5 shrink-0 text-accent" />
+              <div className="min-w-0">
+                <p className="font-heading text-small font-semibold text-text">
+                  When this service is available
+                </p>
+                <p className="mt-1 text-small text-text-muted">
+                  {service.availability}
+                </p>
+              </div>
+            </div>
+            <div className="mt-6">
+              <Button href="/contact-us/" variant="accent">
+                Get Started
+              </Button>
+            </div>
           </div>
         </div>
       </Section>
@@ -106,35 +125,96 @@ export default async function ServiceDetailPage({ params }: Props) {
         </div>
       </Section>
 
-      <ProcessSteps />
+      <Section>
+        <SectionHeading
+          eyebrow="Best Fit"
+          title={`Who ${service.title} is for`}
+          intro="A quick check to see if this package matches where your business is right now."
+        />
+        <ul className="grid gap-4 md:grid-cols-3">
+          {service.idealFor.map((item) => (
+            <li
+              key={item}
+              className="rounded-md border border-border bg-card p-5 shadow-card"
+            >
+              <div className="flex items-start gap-3">
+                <Icon
+                  icon={Check}
+                  size="sm"
+                  className="mt-1 shrink-0 text-accent"
+                />
+                <p className="font-heading text-body font-medium text-text">
+                  {item}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </Section>
 
       <Section variant="surface">
+        <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+          <SectionHeading
+            eyebrow="How It Works"
+            title={`How our ${service.title.toLowerCase()} engagement runs`}
+            intro="A clear path from first conversation to ongoing delivery."
+            className="mb-0 md:mb-0"
+          />
+          <ol className="space-y-4">
+            {service.howItWorks.map((step, index) => (
+              <li
+                key={step.title}
+                className="flex gap-4 rounded-md border border-border bg-card p-5 shadow-card"
+              >
+                <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-primary font-heading text-body font-bold text-on-primary">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <div>
+                  <h3 className="font-heading text-h3 text-text">{step.title}</h3>
+                  <p className="mt-2 text-body text-text-muted">
+                    {step.description}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </Section>
+
+      <Section>
         <SectionHeading
           eyebrow="FAQ"
           title="Common Questions"
-          intro="Answers that apply across our financial service packages."
+          intro={`Answers specific to ${service.title.toLowerCase()}.`}
         />
-        <div className="mx-auto max-w-3xl space-y-4">
-          {serviceFaqs.map((faq) => (
+        <div className="w-full space-y-3">
+          {service.faqs.map((faq) => (
             <details
               key={faq.question}
-              className="rounded-md border border-border bg-card p-5"
+              className="group w-full rounded-md border border-border bg-card px-4 py-3 md:px-5 md:py-4"
             >
-              <summary className="cursor-pointer font-heading font-semibold text-text">
-                {faq.question}
+              <summary className="cursor-pointer list-none font-heading text-small font-semibold text-text md:text-body [&::-webkit-details-marker]:hidden">
+                <span className="flex items-start justify-between gap-3">
+                  <span className="min-w-0 flex-1">{faq.question}</span>
+                  <span
+                    aria-hidden
+                    className="mt-0.5 shrink-0 text-accent transition-transform group-open:rotate-90"
+                  >
+                    ›
+                  </span>
+                </span>
               </summary>
-              <p className="mt-3 text-body text-text-muted">{faq.answer}</p>
+              <p className="mt-3 border-t border-border pt-3 text-small text-text-muted md:text-body">
+                {faq.answer}
+              </p>
             </details>
           ))}
         </div>
-        <p className="sr-only">
-          Process overview: {processSteps.map((s) => s.title).join(", ")}
-        </p>
       </Section>
 
       <VideoCtaBand
-        title={`Ready for ${service.title}?`}
-        description="Share your plans and deadline. We will confirm scope and pricing before work begins."
+        title={`Ready to start ${service.title}?`}
+        description="Tell us about your books, timeline, and goals. We will confirm scope, availability, and next steps."
       />
     </>
   );

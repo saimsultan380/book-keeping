@@ -1,9 +1,9 @@
 export const siteConfig = {
   brand: "Doxo Collective",
   legalName: "Doxo Collective LLC", // PLACEHOLDER — confirm legal entity
-  tagline: "Precision Accounting & Strategic Financial Growth",
+  tagline: "Clear Books. Smarter Decisions. Steady Growth.",
   description:
-    "Your strategic partner for bookkeeping, tax optimization, CFO advisory, and loan strategy. We simplify finance so you can focus on building your business.",
+    "Doxo Collective helps growing companies keep accurate books, plan taxes with intention, and get practical CFO guidance—without hiring a full in-house finance team.",
   /** Canonical origin — always non-www HTTPS, no trailing slash. */
   url: "https://doxocollective.com",
   phone: "(555) 014-2800", // PLACEHOLDER
@@ -27,14 +27,14 @@ export const siteConfig = {
     linkedin: "https://linkedin.com/", // PLACEHOLDER
     instagram: "https://instagram.com/", // PLACEHOLDER
   },
-  youtubeId: "bJTZbfq7amQ", // Bookkeeping 101 overview — replace with Doxo Collective intro when available
+  youtubeId: "bJTZbfq7amQ", // Replace with Doxo Collective intro when available
   logo: {
     mark: "/logo-mark.jpg",
     light: "/logo.svg",
     dark: "/logo-light.svg",
   },
-  topBarPromo: "Need a professional bookkeeper?",
-  topBarCta: "Book a Schedule Now",
+  topBarPromo: "Behind on your books?",
+  topBarCta: "Schedule a Call",
   nav: [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about-us/" },

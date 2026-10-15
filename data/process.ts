@@ -7,20 +7,20 @@ export type ProcessStep = {
 export const processSteps: ProcessStep[] = [
   {
     number: "01",
-    title: "Review Your Finances",
+    title: "Share Your Current Setup",
     description:
-      "We assess your accounting needs, financial position, and business objectives.",
+      "Tell us about your software, bank accounts, pain points, and what reports you need each month.",
   },
   {
     number: "02",
-    title: "Build Your Strategy",
+    title: "We Build Your Rhythm",
     description:
-      "We develop the right approach across bookkeeping, tax, CFO advisory, or commercial financing.",
+      "We set the close calendar, clean the ledger as needed, and agree on bookkeeping, tax, or advisory scope.",
   },
   {
     number: "03",
-    title: "Grow With Confidence",
+    title: "Run on Clear Numbers",
     description:
-      "Use accurate reporting and practical financial guidance to make stronger business decisions.",
+      "You receive on-time reports and practical notes so hiring, spending, and funding decisions rest on facts.",
   },
 ];

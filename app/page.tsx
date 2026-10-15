@@ -39,8 +39,8 @@ export default function HomePage() {
       <Section>
         <SectionHeading
           eyebrow="Our Services"
-          title="What Service We Offer"
-          intro="From accurate bookkeeping to strategic financial advisory, Doxo Collective designs solutions around your business needs."
+          title="Finance Services for Growing Companies"
+          intro="Pick the support you need now—bookkeeping, tax packages, advisory, or funding prep—and expand as your team grows."
           action={{ label: "All Services", href: "/services/" }}
         />
         <div className="grid gap-gap sm:grid-cols-2 lg:grid-cols-3">
@@ -55,8 +55,8 @@ export default function HomePage() {
       <Section variant="surface">
         <SectionHeading
           eyebrow="Transparent Pricing"
-          title="Scalable Financial Solutions"
-          intro="Expert accounting and advisory packages tailored to your business needs."
+          title="Packages That Match Your Stage"
+          intro="Clear monthly and project ranges. Final fees depend on transaction volume, entity complexity, and meeting cadence."
           align="center"
         />
         <PricingTabs />
@@ -64,11 +64,11 @@ export default function HomePage() {
 
       <CounterBand />
 
-      <Section>
+      <Section id="selected-work">
         <SectionHeading
-          eyebrow="Our Cases"
-          title="Let’s See Our Latest Project"
-          intro="Sample engagements across bookkeeping, planning, and financial operations."
+          eyebrow="Selected Work"
+          title="Recent Client Engagements"
+          intro="Examples of bookkeeping cleanups, planning sprints, and reporting systems we put in place."
         />
         <div className="grid gap-gap sm:grid-cols-2">
           {projects.map((project, i) => (
@@ -83,8 +83,8 @@ export default function HomePage() {
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <SectionHeading
             eyebrow="Why Choose Us"
-            title="Trusted Financial Guidance for Your Business"
-            intro="Our advisors act as an extension of your leadership team—accurate reporting, strategic guidance, and dedicated support focused on your financial security."
+            title="Owners Stay in Control. We Keep the Numbers Straight."
+            intro="You get on-time closes, readable reports, and advisors who explain trade-offs—so finance stops being a monthly mystery."
             className="mb-0 md:mb-0"
           />
           <TestimonialCarousel />

@@ -7,10 +7,10 @@ import { Icon } from "@/components/ui/Icon";
 import { FadeIn } from "@/components/motion/FadeIn";
 
 const checklist = [
-  "Bookkeeping Services",
-  "Tax Strategy",
-  "CFO Advisory",
-  "Loan Consultation",
+  "Monthly bookkeeping & reconciliations",
+  "Tax-ready document packages",
+  "Forecasting & KPI reviews",
+  "Lender-ready financial summaries",
 ];
 
 export function AboutBlock() {
@@ -30,27 +30,27 @@ export function AboutBlock() {
             </div>
             <div className="absolute bottom-6 left-6 rounded-md bg-accent px-5 py-4 text-on-accent shadow-card">
               <p className="font-heading text-h3 leading-none">10+ Years</p>
-              <p className="mt-1 text-small">Financial advisory experience</p>
+              <p className="mt-1 text-small">Supporting growing businesses</p>
             </div>
           </div>
         </FadeIn>
 
         <FadeIn delay={0.1}>
           <SectionHeading
-            eyebrow="About Our Firm"
-            title="Integrity, Precision, and Partnership that Scales"
+            eyebrow="About Doxo Collective"
+            title="Finance Support Built for Busy Owners"
             className="mb-6 md:mb-6"
           />
           <div className="space-y-4 text-body text-text-muted">
             <p>
-              Doxo Collective provides authoritative financial consulting,
-              commercial loan strategy, and enterprise accounting services
-              designed to support long-term fiscal stability.
+              Doxo Collective is a bookkeeping and advisory practice for teams
+              that have outgrown spreadsheets but are not ready for a full
+              in-house finance department.
             </p>
             <p>
-              Whether you need a bookkeeping overhaul, strategic tax planning,
-              or help preparing commercial funding documents, our advisors act
-              as an extension of your leadership team.
+              We keep your ledgers current, prepare clean tax packages, and
+              translate reports into decisions you can act on—hiring, spending,
+              and funding included.
             </p>
           </div>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -66,10 +66,10 @@ export function AboutBlock() {
               <Icon icon={LineChart} boxed />
               <div>
                 <p className="font-heading font-semibold text-text">
-                  Advanced Analytics
+                  Actionable Reports
                 </p>
                 <p className="mt-1 text-small text-text-muted">
-                  Clear reporting you can act on
+                  Numbers explained in plain English
                 </p>
               </div>
             </div>
@@ -77,10 +77,10 @@ export function AboutBlock() {
               <Icon icon={ShieldCheck} boxed />
               <div>
                 <p className="font-heading font-semibold text-text">
-                  Certified Team
+                  Reliable Close Cycle
                 </p>
                 <p className="mt-1 text-small text-text-muted">
-                  Experienced advisors on every engagement
+                  Month-end done on a set calendar
                 </p>
               </div>
             </div>

@@ -64,14 +64,14 @@ export default function AboutPage() {
             />
             <div className="space-y-4 text-body text-text-muted">
               <p>
-                {siteConfig.brand} was founded to give business owners a steady
-                financial partner—especially when growth outpaces in-house
-                accounting capacity.
+                {siteConfig.brand} started as a response to a common gap:
+                companies grow faster than their finance process. Spreadsheets
+                stop scaling. Month-end slips. Tax season becomes a fire drill.
               </p>
               <p>
-                Our mission is simple: deliver accurate books, transparent
-                reporting, and practical advisory that supports long-term fiscal
-                stability.
+                We exist to close that gap with dependable bookkeeping,
+                readable reports, and advisory support sized for the stage you
+                are in—not a one-size corporate template.
               </p>
             </div>
           </div>
