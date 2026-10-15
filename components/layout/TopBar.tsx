@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { Container } from "@/components/ui/Container";
 import { Icon } from "@/components/ui/Icon";
@@ -17,22 +17,13 @@ export function TopBar() {
             {siteConfig.topBarCta} →
           </Link>
         </p>
-        <div className="flex items-center gap-5">
-          <a
-            href={siteConfig.phoneHref}
-            className="inline-flex items-center gap-2 transition-colors hover:text-accent"
-          >
-            <Icon icon={Phone} size="sm" className="text-accent" />
-            <span>{siteConfig.phone}</span>
-          </a>
-          <a
-            href={`mailto:${siteConfig.email}`}
-            className="inline-flex items-center gap-2 transition-colors hover:text-accent"
-          >
-            <Icon icon={Mail} size="sm" className="text-accent" />
-            <span>{siteConfig.email}</span>
-          </a>
-        </div>
+        <a
+          href={`mailto:${siteConfig.email}`}
+          className="inline-flex items-center gap-2 transition-colors hover:text-accent"
+        >
+          <Icon icon={Mail} size="sm" className="text-accent" />
+          <span>{siteConfig.email}</span>
+        </a>
       </Container>
     </div>
   );
