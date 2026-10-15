@@ -27,7 +27,7 @@ export const siteConfig = {
     linkedin: "https://linkedin.com/", // PLACEHOLDER
     instagram: "https://instagram.com/", // PLACEHOLDER
   },
-  youtubeId: "dQw4w9WgXcQ", // PLACEHOLDER — replace with real intro video
+  youtubeId: "qThAWmHIe3U", // Construction estimating overview — replace with Doxo Collective intro when available
   logo: {
     mark: "/logo-mark.jpg",
     light: "/logo.svg",

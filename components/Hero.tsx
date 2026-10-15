@@ -55,7 +55,7 @@ export function Hero() {
         open={videoOpen}
         onClose={() => setVideoOpen(false)}
         youtubeId={siteConfig.youtubeId}
-        title="Company introduction video"
+        title="Construction estimating overview video"
       />
     </section>
   );
